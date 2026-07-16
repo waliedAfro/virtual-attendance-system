@@ -1,0 +1,39 @@
+{
+  "paymentManagement": {
+    "title": "Payment History",
+    "subtitle": "View and download your past transaction receipts",
+    "exportCsv": "Export CSV",
+    "searchPlaceholder": "Search by Invoice # or Reference...",
+    "filterAll": "All",
+    "filterSuccessful": "Successful",
+    "filterFailed": "Failed",
+    "filterRefunded": "Refunded",
+    "filterPending": "Pending",
+    "tableHeaders": {
+      "date": "Date",
+      "invoiceReference": "Invoice / Reference",
+      "method": "Method",
+      "amount": "Amount",
+      "paidDate": "Paid Date",
+      "status": "Status",
+      "action": "Action"
+    },
+    "statuses": {
+      "SUCCESSFUL": "Successful",
+      "FAILED": "Failed",
+      "REFUNDED": "Refunded",
+      "PENDING": "Pending",
+      "PAID": "Paid"
+    },
+    "totalPaidYTD": "Total Paid (YTD)",
+    "yearPeriod": "PERIOD",
+    "lastPayment": "Last Payment",
+    "verifiedTransaction": "Verified Transaction",
+    "downloadReceipt": "Download Receipt",
+    "loading": "Loading...",
+    "noPayments": "No payments found."
+  },
+  "common": {
+    "noData": "—"
+  }
+}

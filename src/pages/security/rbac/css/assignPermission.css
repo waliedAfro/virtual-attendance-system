@@ -1,0 +1,115 @@
+/* src/pages/security/rbac/css/assignPermission.css */
+.assign-perm-search {
+    padding: 0 24px 16px;
+}
+
+.assign-perm-search input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    background: var(--bg);
+    transition: var(--transition);
+    color: var(--text-primary);
+}
+
+.assign-perm-search input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(45, 140, 255, 0.1);
+}
+
+.assign-perm-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0 24px;
+}
+
+.assign-perm-group {
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.assign-group-header {
+    padding: 10px 14px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.assign-group-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.assign-group-check input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.group-name {
+    flex: 1;
+}
+
+.assign-perm-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2px;
+    padding: 6px 8px;
+}
+
+.assign-perm-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.assign-perm-item:hover {
+    background: var(--bg);
+}
+
+.assign-perm-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.perm-code {
+    font-size: 10px;
+    color: var(--text-secondary);
+    font-family: 'Courier New', monospace;
+    background: var(--bg);
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: auto;
+}
+
+@media (max-width: 600px) {
+    .assign-perm-items {
+        grid-template-columns: 1fr;
+    }
+    .assign-perm-list {
+        max-height: 300px;
+        padding: 0 16px;
+    }
+    .assign-perm-search {
+        padding: 0 16px 12px;
+    }
+}

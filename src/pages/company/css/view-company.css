@@ -1,0 +1,228 @@
+/* Add to your existing view-company.css */
+.company-container {
+  max-width: 700px; /* Increased from 900px */
+    width: 90%; /* Added for better responsiveness */
+    margin: 20px auto;
+    padding: 20px 40px; /* Increased padding */
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 2px; /* Slightly larger border radius */
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.1),
+      0 4px 8px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+    position: relative;
+   
+  }
+  
+  /* Decorative top gradient */
+  .company-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #2563eb, #1e40af, #2563eb);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .auth-container:hover {
+    box-shadow: 
+      0 30px 70px rgba(0, 0, 0, 0.15),
+      0 6px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px);
+  }
+
+  
+  .company-container h2 {
+    margin-bottom: 40px; /* Increased margin */
+    color: #1a1f36;
+    font-size: 36px; /* Increased font size */
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+  }
+  
+  /* Decorative underline for heading */
+  .company-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #1e40af);
+    border-radius: 4px;
+  }
+
+/* Form layout */
+.view-company-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Label styles */
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5565;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Read-only input styles */
+.readonly-input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 2px;
+  font-size: 16px;
+  background-color: #f8f9fa !important;
+  color: #1a1f36;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.readonly-input:hover {
+  border-color: #2563eb;
+  background-color: #f0f3f8 !important;
+}
+
+.readonly-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* RTL support for Arabic text */
+.readonly-input[dir="rtl"] {
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Back button styles */
+.back-button {
+  padding: 16px 28px;
+  background: linear-gradient(135deg, #6c757d, #495057);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+  box-shadow: 0 8px 16px rgba(108, 117, 125, 0.25);
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #5a6268, #343a40);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(108, 117, 125, 0.35);
+}
+
+.back-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(108, 117, 125, 0.25);
+}
+
+/* Responsive adjustments */
+ /* Responsive design */
+ @media (min-width: 1400px) {
+  .company-container {
+      max-width: 1200px; /* Even larger on big screens */
+      padding: 60px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-container {
+      max-width: 90%;
+      padding: 40px 30px;
+      margin: 30px auto;
+  }
+  
+  .company-container h2 {
+      font-size: 32px;
+      margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-group label {
+    font-size: 13px;
+  }
+  
+  .readonly-input {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-group label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  
+  .readonly-input {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .back-button {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+}
+
+/* Optional: Add a subtle visual indicator for read-only fields */
+.readonly-input {
+  background-image: linear-gradient(45deg, rgba(0,0,0,0.02) 25%, transparent 25%);
+  background-size: 20px 20px;
+}
+
+/* Optional: Add icons to differentiate fields */
+.input-group {
+  position: relative;
+}
+
+/* Company logo adjustment */
+.company-logo {
+  margin-bottom: 30px;
+}
+
+.company-logo .text-logo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Optional: Add a nice border for read-only fields */
+.readonly-input {
+  border-left: 4px solid #2563eb;
+}
+
+/* Disabled state styling */
+.readonly-input:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}

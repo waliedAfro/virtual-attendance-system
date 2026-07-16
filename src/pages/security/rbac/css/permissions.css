@@ -1,0 +1,15 @@
+.permissions-page {
+  padding: 20px;
+}
+.view-toggle {
+  display: flex;
+  gap: 10px;
+}
+.permission-groups-page {
+  padding: 20px;
+}
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}

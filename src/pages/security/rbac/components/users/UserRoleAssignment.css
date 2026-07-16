@@ -1,0 +1,130 @@
+/* UserRoleAssignment.css */
+.user-role-assignment {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.375rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  margin-top: 1rem;
+}
+
+.assignment-controls {
+  margin-bottom: 1.5rem;
+}
+
+.assignment-controls .form-control {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.assignment-controls .form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.user-roles {
+  margin-top: 1rem;
+}
+
+.user-roles h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.roles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.role-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  border: 1px solid #f1f3f5;
+  transition: background-color 0.15s;
+}
+
+.role-item:hover {
+  background-color: #f1f3f5;
+}
+
+.role-item span {
+  font-size: 0.9rem;
+  color: #212529;
+  font-weight: 500;
+}
+
+.role-item .btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.role-item .btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.role-item .btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.role-item .btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.role-item .btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Empty state */
+.assignment-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .user-role-assignment {
+    padding: 1rem;
+  }
+  .assignment-controls .form-control {
+    max-width: 100%;
+  }
+  .role-item {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .role-item .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

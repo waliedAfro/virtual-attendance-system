@@ -1,0 +1,235 @@
+{
+  "addEmployee": {
+    "title": "إضافة موظف",
+    "labels": {
+      "firstName": "الاسم الأول",
+      "middleName": "الاسم الأوسط",
+      "lastName": "اسم العائلة",
+      "fullNameAr": "الاسم الكامل (بالعربية)",
+      "department": "القسم",
+      "employeeNo": "رقم الموظف",
+      "email": "البريد الإلكتروني",
+      "mobile": "رقم الجوال"
+    },
+    "placeholders": {
+      "firstName": "الاسم الأول",
+      "middleName": "الاسم الأوسط",
+      "lastName": "اسم العائلة",
+      "fullNameAr": "الاسم الكامل (بالعربية)",
+      "employeeNo": "رقم الموظف",
+      "email": "البريد الإلكتروني",
+      "mobile": "رقم الجوال"
+    },
+    "selectPlaceholder": "-- اختر القسم --",
+    "loadingDepartments": "جاري تحميل الأقسام...",
+    "errors": {
+      "firstNameRequired": "الاسم الأول مطلوب",
+      "lastNameRequired": "اسم العائلة مطلوب",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "mobileRequired": "رقم الجوال مطلوب",
+      "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+      "mobileInvalid": "يرجى إدخال رقم جوال صحيح"
+    },
+    "buttons": {
+      "add": "إضافة موظف",
+      "adding": "جاري إضافة الموظف...",
+      "reset": "إعادة تعيين"
+    },
+    "confirm": {
+      "title": "تأكيد إضافة موظف جديد",
+      "message": "هل أنت متأكد أنك تريد إضافة \"{firstName} {lastName}\"؟"
+    },
+    "notifications": {
+      "success": "تم إنشاء الموظف بنجاح!",
+      "fail": "فشل إنشاء الموظف!",
+      "deletionFailed": "فشل الحذف"
+    }
+  },
+  "editEmployee": {
+    "title": "تعديل ملف الموظف",
+    "backButton": "← العودة إلى الموظفين",
+    "sections": {
+      "photo": {
+        "heading": "الصورة الشخصية",
+        "changePhoto": "تغيير الصورة",
+        "uploadPhoto": "تحميل صورة",
+        "removePhoto": "إزالة",
+        "supportedFormats": "الصيغ المدعومة: JPEG, PNG, GIF (الحد الأقصى 5 ميجابايت)",
+        "uploading": "جاري التحميل..."
+      },
+      "personalInfoEn": {
+        "heading": "المعلومات الشخصية (بالإنجليزية)",
+        "labels": {
+          "firstName": "الاسم الأول *",
+          "middleName": "الاسم الأوسط",
+          "lastName": "اسم العائلة *"
+        }
+      },
+      "personalInfoAr": {
+        "heading": "المعلومات الشخصية (بالعربية)",
+        "labels": {
+          "firstNameAr": "الاسم الأول (بالعربية)",
+          "middleNameAr": "الاسم الأوسط (بالعربية)",
+          "lastNameAr": "اسم العائلة (بالعربية)"
+        }
+      },
+      "contactInfo": {
+        "heading": "معلومات الاتصال",
+        "labels": {
+          "email": "البريد الإلكتروني *",
+          "mobile": "رقم الجوال *",
+          "phone": "الهاتف"
+        }
+      },
+      "employmentInfo": {
+        "heading": "معلومات التوظيف",
+        "labels": {
+          "employeeNo": "رقم الموظف",
+          "userCode": "رمز المستخدم",
+          "position": "المسمى الوظيفي",
+          "department": "القسم *",
+          "employmentType": "نوع التوظيف",
+          "status": "الحالة"
+        },
+        "employmentTypes": {
+          "fullTime": "دوام كامل",
+          "partTime": "دوام جزئي",
+          "contract": "عقد",
+          "intern": "متدرب"
+        },
+        "statusOptions": {
+          "active": "نشط",
+          "inactive": "غير نشط"
+        },
+        "selectDepartmentPlaceholder": "-- اختر القسم --",
+        "loadingDepartments": "جاري تحميل الأقسام..."
+      },
+      "additionalInfo": {
+        "heading": "معلومات إضافية",
+        "labels": {
+          "dob": "تاريخ الميلاد",
+          "gender": "الجنس",
+          "joinDate": "تاريخ الانضمام",
+          "address": "العنوان",
+          "workLocation": "موقع العمل",
+          "manager": "المدير"
+        },
+        "genderOptions": {
+          "male": "ذكر",
+          "female": "أنثى",
+          "other": "آخر"
+        }
+      }
+    },
+    "errors": {
+      "firstNameRequired": "الاسم الأول مطلوب",
+      "lastNameRequired": "اسم العائلة مطلوب",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "emailInvalid": "البريد الإلكتروني غير صحيح",
+      "mobileRequired": "رقم الجوال مطلوب",
+      "departmentRequired": "القسم مطلوب",
+      "loadDepartmentsFailed": "فشل تحميل الأقسام",
+      "employeeNotFound": "لم يتم العثور على الموظف",
+      "loadEmployeeFailed": "فشل تحميل تفاصيل الموظف",
+      "uploadPhotoFailed": "فشل تحميل الصورة",
+      "invalidImageFormat": "يرجى اختيار ملف صورة صحيح (JPEG, PNG, GIF)",
+      "fileSizeExceeded": "يجب أن يكون حجم الملف أقل من 5 ميجابايت"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "save": "حفظ التغييرات",
+      "saving": "جاري الحفظ..."
+    },
+    "confirm": {
+      "title": "تأكيد التحديث",
+      "message": "هل أنت متأكد أنك تريد تحديث بيانات \"{firstName} {lastName}\"؟"
+    },
+    "notifications": {
+      "updateSuccess": "تم تحديث بيانات الموظف بنجاح!",
+      "updateFailed": "فشل تحديث بيانات الموظف"
+    }
+  },
+  "searchEmployee": {
+    "title": "البحث عن الموظفين",
+    "searchPlaceholder": "ابحث بالاسم، رقم الموظف، أو البريد الإلكتروني...",
+    "searchButton": "بحث",
+    "searchingButton": "جاري البحث...",
+    "errorLoading": "فشل تحميل الموظفين.",
+    "retryButton": "إعادة المحاولة",
+    "resultsHeader": "نتائج البحث ({{count}})",
+    "noResults": "لم يتم العثور على موظفين يطابقون معايير البحث الخاصة بك.",
+    "quickAdd": "+ إضافة موظف جديد",
+    "employeeCard": {
+      "employeeNo": "رقم الموظف:",
+      "department": "القسم:",
+      "email": "البريد الإلكتروني:",
+      "mobile": "رقم الجوال:",
+      "departmentName": "القسم:",
+      "position": "المسمى الوظيفي:",
+      "stats": {
+        "devicesAssigned": "الأجهزة المخصصة",
+        "lastActive": "آخر نشاط"
+      },
+      "actions": {
+        "viewProfile": "عرض الملف الشخصي",
+        "edit": "تعديل"
+      }
+    },
+    "pagination": {
+      "showingPage": "عرض الصفحة {{currentPage}} من {{totalPages}}",
+      "range": "({{start}} - {{end}} من إجمالي {{total}} موظف)"
+    }
+  },
+  "viewEmployee": {
+    "backButton": "← العودة إلى الموظفين",
+    "title": "ملف الموظف",
+    "photoHeading": "الصورة الشخصية",
+    "sections": {
+      "employeeInfo": {
+        "heading": "معلومات الموظف",
+        "labels": {
+          "employeeNo": "رقم الموظف",
+          "userCode": "رمز المستخدم",
+          "position": "المسمى الوظيفي",
+          "department": "القسم",
+          "status": "الحالة"
+        },
+        "status": {
+          "active": "نشط",
+          "inactive": "غير نشط"
+        }
+      },
+      "personalInfo": {
+        "heading": "المعلومات الشخصية",
+        "labels": {
+          "fullNameEn": "الاسم الكامل (بالإنجليزية)",
+          "fullNameAr": "الاسم الكامل (بالعربية)",
+          "dob": "تاريخ الميلاد",
+          "gender": "الجنس"
+        }
+      },
+      "contactInfo": {
+        "heading": "معلومات الاتصال",
+        "labels": {
+          "email": "البريد الإلكتروني",
+          "mobile": "رقم الجوال",
+          "phone": "الهاتف",
+          "address": "العنوان"
+        }
+      },
+      "employmentDetails": {
+        "heading": "تفاصيل التوظيف",
+        "labels": {
+          "joinDate": "تاريخ الانضمام",
+          "employmentType": "نوع التوظيف",
+          "workLocation": "موقع العمل",
+          "manager": "المدير"
+        }
+      }
+    },
+    "errors": {
+      "loadEmployeeFailed": "فشل تحميل تفاصيل الموظف",
+      "employeeNotFound": "لم يتم العثور على الموظف"
+    }
+  }
+}

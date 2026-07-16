@@ -1,0 +1,55 @@
+{
+  "departmentManagement": {
+    "title": "إدارة الأقسام",
+    "subtitle": "إنشاء وإدارة الأقسام التنظيمية",
+    "addDepartment": "إضافة قسم",
+    "searchByNamePlaceholder": "بحث بالاسم...",
+    "searchByCodePlaceholder": "الرمز...",
+    "allStatuses": "جميع الحالات",
+    "activeOnly": "نشط فقط",
+    "inactiveOnly": "غير نشط فقط",
+    "sn": "م",
+    "code": "الرمز",
+    "nameEn": "الاسم (إنجليزي)",
+    "nameAr": "الاسم (عربي)",
+    "status": "الحالة",
+    "actions": "الإجراءات",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "deleteModal": {
+      "title": "حذف القسم؟",
+      "confirmation": "هل أنت متأكد أنك تريد حذف <strong>{{name}}</strong>؟ لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "تأكيد الحذف",
+      "cancel": "إلغاء"
+    },
+    "form": {
+      "newDepartment": "قسم جديد",
+      "editDepartment": "تعديل القسم",
+      "labelNameEn": "اسم القسم (بالإنجليزي)",
+      "labelNameAr": "اسم القسم (بالعربي)",
+      "labelCode": "رمز القسم",
+      "labelActiveStatus": "حالة النشاط",
+      "placeholderNameEn": "مثال: Human Resources",
+      "placeholderNameAr": "مثال: الموارد البشرية",
+      "placeholderCode": "مثال: HR-001",
+      "cancel": "إلغاء",
+      "saving": "جاري الحفظ...",
+      "saveChanges": "حفظ التغييرات"
+    },
+    "validation": {
+      "englishNameRequired": "الاسم الإنجليزي مطلوب",
+      "arabicNameRequired": "الاسم العربي مطلوب",
+      "codeRequired": "رمز القسم مطلوب"
+    },
+    "messages": {
+      "loadFailed": "فشل تحميل الأقسام. يرجى المحاولة مرة أخرى.",
+      "createSuccess": "تم إنشاء القسم بنجاح!",
+      "updateSuccess": "تم حفظ التغييرات بنجاح!",
+      "deleteSuccess": "تم حذف {{name}} بنجاح",
+      "deleteFailed": "فشل في حذف القسم",
+      "saveError": "خطأ في حفظ البيانات"
+    }
+  }
+}

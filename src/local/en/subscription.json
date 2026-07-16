@@ -1,0 +1,215 @@
+{
+  "assignLicenseModal": {
+    "title": "Assign New License",
+    "subscriptionId": "Subscription ID *",
+    "deviceId": "Device ID (optional)",
+    "cancel": "Cancel",
+    "assign": "Assign",
+    "assigning": "Assigning..."
+  },
+  "assignUserModal": {
+    "title": "Assign User to Subscription",
+    "selectUser": "Select User *",
+    "deviceId": "Device ID (optional)",
+    "cancel": "Cancel",
+    "assign": "Assign",
+    "assigning": "Assigning...",
+    "loadingUsers": "Loading users...",
+    "chooseUser": "-- Choose a user --"
+  },
+  "licenseTable": {
+    "headers": {
+      "licenseId": "License ID",
+      "subscription": "Subscription",
+      "device": "Device",
+      "assignedAt": "Assigned At",
+      "revokedAt": "Revoked At",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "ACTIVE": "Active",
+      "REVOKED": "Revoked",
+      "EXPIRED": "Expired",
+      "PENDING": "Pending"
+    },
+    "revoke": "Revoke",
+    "empty": "No licenses found."
+  },
+  "subscriptionLicenses": {
+    "title": "Assign User to Subscription",
+    "subscriptionLabel": "Subscription",
+    "userLabel": "User",
+    "selectButton": "Select",
+    "assignButton": "Assign User",
+    "assigning": "Assigning...",
+    "removeButton": "Remove",
+    "assignedUsersTable": {
+      "headers": {
+        "user": "User",
+        "email": "Email",
+        "assignedDate": "Assigned Date",
+        "action": "Action"
+      },
+      "empty": "No users assigned to this subscription",
+      "noSubscriptionSelected": "Please select a subscription to view assigned users."
+    },
+    "userModal": {
+      "title": "Select User",
+      "searchPlaceholder": "Search by name or email...",
+      "loading": "Loading users...",
+      "tableHeaders": {
+        "sn": "S/N",
+        "name": "Name",
+        "code": "Code",
+        "mobile": "Mobile",
+        "email": "Email",
+        "status": "Status",
+        "employeeNo": "Employee No",
+        "action": "Action"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "paginationInfo": "Showing page {currentPage} of {totalPages} ({start} - {end} of {total} employees)",
+      "noResults": "No employees found matching your criteria."
+    },
+    "confirmations": {
+      "assign": {
+        "title": "Are you sure?",
+        "text": "You are about to assign this user to the subscription.",
+        "confirmButton": "Yes, assign",
+        "cancelButton": "Cancel"
+      },
+      "remove": {
+        "title": "Are you sure?",
+        "text": "You are about to remove this user from the subscription.",
+        "confirmButton": "Yes, remove it",
+        "cancelButton": "Cancel"
+      }
+    },
+    "toasts": {
+      "assignSuccess": "User assigned successfully",
+      "assignError": "Failed to assign user. Please try again.",
+      "removeSuccess": "User removed successfully",
+      "removeError": "Failed to remove user. Please try again.",
+      "loading": "Assigning user...",
+      "removing": "Removing user..."
+    },
+    "errors": {
+      "loadSubscriptions": "Failed to load subscriptions. Please refresh the page.",
+      "loadEmployees": "Failed to load employees.",
+      "loadAssigned": "Failed to load assigned users.",
+      "invalidSelection": "Please select both a subscription and a user.",
+      "invalidUser": "Invalid user selection."
+    }
+  },
+  "subscription": {
+    "title": "Subscribe to Services",
+    "subtitle": "Choose the perfect plan for your business needs",
+    "stepper": {
+      "steps": ["Select Service", "Choose Plan", "Configure", "Confirm"]
+    },
+    "serviceCard": {
+      "availablePlans": "Available Plans: {count}",
+      "viewPlans": "View Plans",
+      "backToServices": "Back to Services"
+    },
+    "planCard": {
+      "popular": "⭐ Popular",
+      "selectPlan": "Select Plan",
+      "selected": "✓ Selected",
+      "plans": "Plans"
+    },
+    "billingCycle": {
+      "monthly": "Monthly",
+      "yearly": "Yearly (Save 20%)"
+    },
+    "configureForm": {
+      "title": "Configure Your Subscription",
+      "selectedPlan": "Selected Plan",
+      "price": "Price: QR {price}/{interval}",
+      "numberOfLicenses": "Number of Licenses",
+      "autoRenew": "Auto-renew subscription",
+      "orderSummary": "Order Summary",
+      "basePrice": "Base Price:",
+      "licenses": "Licenses:",
+      "total": "Total:",
+      "back": "Back",
+      "continue": "Continue to Confirmation"
+    },
+    "confirmation": {
+      "title": "Confirm Your Subscription",
+      "service": "Service",
+      "plan": "Plan",
+      "billingCycle": "Billing Cycle",
+      "licenses": "Licenses",
+      "autoRenew": "Auto-renew",
+      "totalAmount": "Total Amount",
+      "back": "Back",
+      "confirm": "Confirm & Subscribe",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "subscriptionList": {
+      "title": "Your Active Subscriptions",
+      "refresh": "Refresh Subscriptions",
+      "renew": "Renew / Update",
+      "cancel": "Cancel Subscription",
+      "card": {
+        "licenses": "Licenses",
+        "billingCycle": "Billing Cycle",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "paymentStatus": "Payment Status",
+        "amount": "Amount",
+        "pay": "Pay",
+        "autoRenewBadge": "Auto-renew enabled"
+      },
+      "status": {
+        "INCOMPLETE": "Incomplete",
+        "ACTIVE": "Active",
+        "SUSPENDED": "Suspended",
+        "EXPIRED": "Expired",
+        "CANCELLED": "Cancelled"
+      }
+    },
+    "cancelDialog": {
+      "title": "Cancel Subscription",
+      "text": "Are you sure you want to cancel this subscription? This action cannot be undone.",
+      "keep": "No, Keep It",
+      "confirm": "Yes, Cancel Subscription"
+    },
+    "renewDialog": {
+      "title": "Renew / Update Subscription",
+      "text": "Update the number of licenses for your subscription.",
+      "numberOfLicenses": "Number of Licenses",
+      "cancel": "Cancel",
+      "update": "Update Subscription"
+    },
+    "success": {
+      "title": "Subscription Successful!",
+      "message": "You have successfully subscribed to {service} - {plan} plan",
+      "details": "Your subscription will be active After Completed Payment with {licenses} license(s)",
+      "dashboard": "Go to Dashboard"
+    },
+    "loading": "Loading...",
+    "error": {
+      "dismiss": "Dismiss"
+    }
+  },
+  "userLicenses": {
+    "title": "User Licenses",
+    "assignNew": "Assign New License",
+    "loading": "Loading licenses...",
+    "error": "Error loading licenses: {error}",
+    "missingUserId": "User ID is missing",
+    "revokeConfirmation": {
+      "title": "Are you sure?",
+      "text": "Are you sure you want to revoke this license?",
+      "confirm": "Yes, revoke",
+      "cancel": "Cancel"
+    }
+  }
+}

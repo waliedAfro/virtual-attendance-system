@@ -1,0 +1,87 @@
+/* PermissionTree.css */
+.permission-tree-container {
+  padding: 0.5rem 0;
+}
+
+.permission-tree-root,
+.permission-tree-children {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.permission-tree-children {
+  padding-left: 1.5rem;
+}
+
+.permission-tree-node {
+  margin: 0.1rem 0;
+}
+
+.permission-tree-node-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.25rem;
+  cursor: default;
+  transition: background-color 0.15s;
+  font-size: 0.9rem;
+}
+
+.permission-tree-node-label:hover {
+  background-color: #f1f3f5;
+}
+
+.permission-node-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.permission-node-name {
+  font-weight: 500;
+  color: #212529;
+  flex: 1;
+}
+
+.permission-node-action {
+  font-size: 0.75rem;
+  color: #6c757d;
+  background-color: #e9ecef;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.permission-node-resource {
+  font-size: 0.75rem;
+  color: #007bff;
+  background-color: #e7f1ff;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* Loading and empty states */
+.permission-tree-loading,
+.permission-tree-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .permission-tree-node-label {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  .permission-node-name {
+    flex-basis: 100%;
+  }
+  .permission-node-action,
+  .permission-node-resource {
+    font-size: 0.65rem;
+  }
+}

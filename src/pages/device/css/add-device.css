@@ -1,0 +1,228 @@
+/* --- Design Tokens --- */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-glow: rgba(37, 99, 235, 0.15);
+  --error: #dc2626;
+  --success: #10b981;
+  --text-main: #1a1f36;
+  --text-muted: #4b5565;
+  --bg-subtle: #f8f9fa;
+  --border-color: #e9ecef;
+  
+  /* Unified Radius - Change this one value to update the whole form */
+  --radius: 12px; 
+  --shadow-md: 0 20px 40px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 30px 70px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Main Container --- */
+.device-container {
+  max-width: 1200px;
+  width: 92%;
+  margin: 40px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #ffffff, #fcfcfc);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.device-container:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+}
+
+/* --- Animated Top Accent --- */
+.device-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark), var(--primary));
+  background-size: 200% 100%;
+  animation: gradientShift 3s linear infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* --- Typography --- */
+.device-container h2 {
+  margin-bottom: 45px;
+  color: var(--text-main);
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.device-container h2::after {
+  content: '';
+  display: block;
+  margin: 12px auto 0;
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 10px;
+  opacity: 0.3;
+}
+
+/* --- Form Layout --- */
+.device-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+/* --- Inputs, Selects, & Textareas --- */
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 16px;
+  color: var(--text-main);
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-group input:hover, 
+.input-group select:hover, 
+.input-group textarea:hover {
+  border-color: var(--primary);
+  background-color: #fafbff;
+}
+
+.input-group input:focus, 
+.input-group select:focus, 
+.input-group textarea:focus {
+  border-color: var(--primary);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px var(--primary-glow);
+  animation: gentlePulse 1.5s infinite;
+}
+
+/*  button */
+.device-button-group {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.device-button-group button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.0rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Style for submit button */
+.device-button-group button[type="submit"] {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.device-button-group button[type="submit"]:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+/* Style for reset button */
+.device-button-group button[type="button"] {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.device-button-group button[type="button"]:hover:not(:disabled) {
+  background-color: #cbd5e1;
+}
+
+.device-button-group button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* On small screens, stack vertically if needed */
+@media (max-width: 480px) {
+  .device-button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .device-button-group button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* --- Feedback States --- */
+.error-message {
+  background: #fff1f2;
+  border-left: 4px solid var(--error);
+  border-radius: 8px;
+  padding: 14px;
+  color: var(--error);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+input.error {
+  border-color: var(--error) !important;
+  animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .device-container {
+    padding: 30px 20px;
+    margin: 20px auto;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .submit-button, .reset-button {
+    width: 100%;
+  }
+}

@@ -1,38 +1,75 @@
-import api from './api';
-
-const AUTH_BASE_URL = '/auth';
-
+import api from "./api";
+import { extractApiErrorMessage } from "./exception/axiosErrorHandler";
+const API_AUTH_URL = "/auth"
 export const authService = {
-  // Login
-  login: async (credentials) => {
+  login: async (data) => {
     try {
-      const response = await api.post(`${AUTH_BASE_URL}/login`, credentials);
-      const { token, user } = response.data;
-      
-      // Store token in localStorage
-      localStorage.setItem('authToken', token);
-      localStorage.setItem('user', JSON.stringify(user));
-      
-      return { token, user };
+
+      const response = await api.post(`${API_AUTH_URL}/login`, data);
+     
+     
+      return response.data;
     } catch (error) {
-      throw new Error(`Login failed: ${error.response?.data?.message || error.message}`);
+      console.log(error);
+      throw new Error(extractApiErrorMessage(error));
     }
   },
 
-  // Logout
+  signup: async (data) => {
+    try {
+      const response = await api.post(`${API_AUTH_URL}/signup`, data);
+      
+      return response.data;
+    } catch (error) {
+      throw new Error(
+        `Failed to create account: ${
+          error.response?.data?.message || error.message
+        }`
+      );
+    }
+  },
+
+  saveToken: (token) => {
+    localStorage.setItem("token", token);
+  },
+
+  getToken: () => {
+    return localStorage.getItem("token");
+  },
+
+  saveData: (data) => {
+    localStorage.setItem("data", JSON.stringify(data));
+  },
+
+  getData: () => {
+    const savedData = localStorage.getItem("data");
+    // نتحقق أولاً من وجود البيانات ثم نحولها لكائن
+    return savedData ? JSON.parse(savedData) : null;
+  },
+
   logout: () => {
-    localStorage.removeItem('authToken');
-    localStorage.removeItem('user');
+    localStorage.removeItem("token");
+    localStorage.removeItem("data");
   },
 
-  // Get current user
-  getCurrentUser: () => {
-    const user = localStorage.getItem('user');
-    return user ? JSON.parse(user) : null;
-  },
+  // Inside authService object
+requestPasswordReset: async (email) => {
 
-  // Check if user is authenticated
-  isAuthenticated: () => {
-    return !!localStorage.getItem('authToken');
-  }
-};
+  console.log(email);
+
+  const response = await api.post(`${API_AUTH_URL}/forgot-password/link`,  {"email" : email });
+  console.log(response.data);
+  
+  return response.data;
+},
+
+resetPassword: async (token, newPassword) => {
+  const response = await api.post(`${API_AUTH_URL}/reset-password/link`, { 
+    token, 
+    password: newPassword 
+  });
+  return response.data;
+},
+
+
+}

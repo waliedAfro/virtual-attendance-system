@@ -1,0 +1,660 @@
+/* styles.css - Subscription component styles with subs- prefix */
+
+/* Reset - only apply to subscription components */
+.subs-reset * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subs-body {
+  /*  font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    line-height: 1.5;*/
+
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+}
+
+.subs-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Typography */
+.subs-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.subs-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.subs-container h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subs-container h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subs-subtitle {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.subs-text-small {
+  font-size: 0.875rem;
+}
+
+.subs-text-muted {
+  color: #6b7280;
+}
+
+.subs-text-center {
+  text-align: center;
+}
+
+/* Layout */
+.subs-flex {
+  display: flex;
+}
+
+.subs-flex-col {
+  flex-direction: column;
+}
+
+.subs-items-center {
+  align-items: center;
+}
+
+.subs-items-start {
+  align-items: flex-start;
+}
+
+.subs-justify-between {
+  justify-content: space-between;
+}
+
+.subs-justify-center {
+  justify-content: center;
+}
+
+.subs-gap-1 {
+  gap: 0.25rem;
+}
+.subs-gap-2 {
+  gap: 0.5rem;
+}
+.subs-gap-3 {
+  gap: 0.75rem;
+}
+.subs-gap-4 {
+  gap: 1rem;
+}
+.subs-gap-6 {
+  gap: 1.5rem;
+}
+.subs-gap-8 {
+  gap: 2rem;
+}
+
+/* Grid */
+.subs-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.subs-grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.subs-grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.subs-grid-cols-3 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+  .subs-grid-cols-2,
+  .subs-grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards */
+.subs-card {
+  background-color: #f9f9f9;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.subs-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.subs-card-popular {
+  border: 2px solid #2563eb;
+  position: relative;
+}
+
+.subs-card-header {
+  margin-bottom: 1rem;
+}
+
+.subs-card-body {
+  margin-bottom: 1rem;
+}
+
+.subs-card-footer {
+  margin-top: auto;
+}
+
+/* Badges */
+.subs-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.subs-badge-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.subs-badge-success {
+  background: #059669;
+  color: white;
+}
+
+.subs-badge-warning {
+  background: #d97706;
+  color: white;
+}
+
+.subs-badge-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.subs-badge-popular {
+  position: absolute;
+  top: -0.75rem;
+  right: 1rem;
+  background: #2563eb;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Buttons */
+.subs-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.subs-btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.subs-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.subs-btn-outline {
+  background: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.subs-btn-outline:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.subs-btn-outline-secondary {
+  border: 1px solid #d1d5db;
+  color: #4b5563;
+}
+
+.subs-btn-outline-secondary:hover {
+  background: #f3f4f6;
+}
+
+.subs-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Forms */
+.subs-form-group {
+  margin-bottom: 1rem;
+}
+
+.subs-form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.subs-form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.subs-form-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  ring: 2px solid #2563eb;
+}
+
+.subs-form-radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.subs-form-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.subs-form-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.subs-form-switch input {
+  width: 2.5rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+/* Stepper */
+.subs-stepper {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.subs-stepper-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.subs-stepper-number {
+  width: 2rem;
+  height: 2rem;
+  background: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.subs-stepper-number.subs-active {
+  background: #2563eb;
+  color: white;
+}
+
+.subs-stepper-number.subs-completed {
+  background: #059669;
+  color: white;
+}
+
+.subs-stepper-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.subs-stepper-label.subs-active {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+/* Alerts */
+.subs-alert {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.subs-alert-error {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.subs-alert-success {
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+/* Lists */
+.subs-list {
+  list-style: none;
+}
+
+.subs-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+/* Icons */
+.subs-icon-check {
+  color: #059669;
+  font-size: 1.25rem;
+}
+
+.subs-icon-cancel {
+  color: #dc2626;
+  font-size: 1.25rem;
+}
+
+.subs-icon-star {
+  color: #fbbf24;
+}
+
+/* Loading Spinner */
+.subs-spinner {
+  border: 3px solid #f3f4f6;
+  border-top: 3px solid #2563eb;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  animation: subs-spin 1s linear infinite;
+}
+
+@keyframes subs-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dividers */
+.subs-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 1rem 0;
+}
+
+/* Order Summary */
+.subs-summary-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.subs-summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.subs-summary-total {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2563eb;
+}
+
+/* Modals/Dialogs */
+.subs-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.subs-modal {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  max-width: 500px;
+  width: 90%;
+}
+
+.subs-modal-header {
+  margin-bottom: 1rem;
+}
+
+.subs-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Dropdown Menu (renamed from .menu to avoid conflict) */
+.subs-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.subs-dropdown-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.subs-dropdown-items {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 100;
+}
+
+.subs-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.subs-dropdown-item:hover {
+  background: #f3f4f6;
+}
+
+/* Progress Bar */
+.subs-progress {
+  height: 0.5rem;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.subs-progress-bar {
+  height: 100%;
+  background: #2563eb;
+  transition: width 0.3s;
+}
+
+/* Utilities */
+.subs-mt-2 {
+  margin-top: 0.5rem;
+}
+.subs-mt-4 {
+  margin-top: 1rem;
+}
+.subs-mt-8 {
+  margin-top: 2rem;
+}
+.subs-mb-2 {
+  margin-bottom: 0.5rem;
+}
+.subs-mb-4 {
+  margin-bottom: 1rem;
+}
+.subs-mb-8 {
+  margin-bottom: 2rem;
+}
+.subs-p-4 {
+  padding: 1rem;
+}
+.subs-p-8 {
+  padding: 2rem;
+}
+
+.subs-w-full {
+  width: 100%;
+}
+.subs-h-full {
+  height: 100%;
+}
+
+.subs-relative {
+  position: relative;
+}
+.subs-absolute {
+  position: absolute;
+}
+
+.subs-cursor-pointer {
+  cursor: pointer;
+}
+.subs-rounded {
+  border-radius: 0.375rem;
+}
+.subs-rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* Remove the universal reset since we're using subs-reset */
+/* Payment Button Container */
+.payment-button-container {
+  display: flex;
+  justify-content: flex-end;   /* Aligns the button to the right */
+  margin-top: 1rem;            /* Spacing from content above */
+}
+
+/* Payment Button */
+.payment-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;                 /* space between text and icon */
+  padding: 0.625rem 1.25rem;
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect */
+.payment-button:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #1e7e34, #155d27);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Active (click) effect */
+.payment-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Focus ring for accessibility */
+.payment-button:focus-visible {
+  outline: 2px solid #28a745;
+  outline-offset: 2px;
+}
+
+/* Disabled state (if needed) */
+.payment-button:disabled {
+  background: #c3e6cb;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Optional: icon styling */
+.payment-button .button-icon {
+  font-size: 1rem;
+}
+
+/* Responsive: full width on small screens */
+@media (max-width: 640px) {
+  .payment-button-container {
+    justify-content: stretch;
+  }
+  .payment-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "title": "View Company Details",
+    "companyCode": "Company Code",
+    "companyName": "Company Name (English)",
+    "companyNameAr": "Company Name (Arabic)",
+    "phoneNumber": "Phone Number",
+    "maxUsers": "Maximum Users",
+    "status": "Status",
+    "billingEmail": "Billing Email"
+  }

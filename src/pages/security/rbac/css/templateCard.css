@@ -1,0 +1,138 @@
+/* src/pages/security/rbac/css/templateCard.css */
+.template-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: var(--transition);
+}
+
+.template-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+}
+
+.template-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.template-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.template-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.template-badge.system {
+    background: rgba(45, 140, 255, 0.12);
+    color: var(--primary);
+}
+
+.template-meta {
+    display: flex;
+    gap: 16px;
+    margin: 8px 0 14px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.template-meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.template-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.template-actions .btn-outline {
+    flex: 1;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.template-actions .btn-primary {
+    flex: 1;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.template-permissions {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.inherited-badge {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.inherited-badge::before {
+    content: '🔒 ';
+    font-size: 12px;
+}
+
+.template-perm-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.template-perm-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    background: var(--bg);
+    padding: 4px 12px 4px 8px;
+    border-radius: 16px;
+}
+
+.perm-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.template-perm-more {
+    font-size: 13px;
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    background: var(--bg);
+    border-radius: 16px;
+}
+
+@media (max-width: 600px) {
+    .template-card {
+        padding: 16px;
+    }
+    .template-actions {
+        flex-direction: column;
+    }
+}

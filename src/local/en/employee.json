@@ -1,0 +1,235 @@
+{
+  "addEmployee": {
+    "title": "Add employee",
+    "labels": {
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "fullNameAr": "Full Name (Arabic)",
+      "department": "Department",
+      "employeeNo": "Employee No",
+      "email": "Email",
+      "mobile": "Mobile"
+    },
+    "placeholders": {
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "lastName": "Last Name",
+      "fullNameAr": "Full Name (Arabic)",
+      "employeeNo": "Employee No",
+      "email": "Email",
+      "mobile": "mobile"
+    },
+    "selectPlaceholder": "-- Select Department--",
+    "loadingDepartments": "Loading Departments...",
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "mobileRequired": "Mobile number is required",
+      "emailInvalid": "Please enter a valid email address",
+      "mobileInvalid": "Please enter a valid mobile number"
+    },
+    "buttons": {
+      "add": "Add Employee",
+      "adding": "Adding Employee...",
+      "reset": "Reset"
+    },
+    "confirm": {
+      "title": "Confirm To Add New Employee",
+      "message": "Are you sure you want to Add \"{firstName} {lastName}\"?"
+    },
+    "notifications": {
+      "success": "Employee created successfully!",
+      "fail": "Employee created Fail!",
+      "deletionFailed": "Deletion failed"
+    }
+  },
+  "editEmployee": {
+    "title": "Edit Employee Profile",
+    "backButton": "← Back to Employees",
+    "sections": {
+      "photo": {
+        "heading": "Profile Photo",
+        "changePhoto": "Change Photo",
+        "uploadPhoto": "Upload Photo",
+        "removePhoto": "Remove",
+        "supportedFormats": "Supported formats: JPEG, PNG, GIF (Max 5MB)",
+        "uploading": "Uploading..."
+      },
+      "personalInfoEn": {
+        "heading": "Personal Information (English)",
+        "labels": {
+          "firstName": "First Name *",
+          "middleName": "Middle Name",
+          "lastName": "Last Name *"
+        }
+      },
+      "personalInfoAr": {
+        "heading": "Personal Information (Arabic)",
+        "labels": {
+          "firstNameAr": "First Name (AR)",
+          "middleNameAr": "Middle Name (AR)",
+          "lastNameAr": "Last Name (AR)"
+        }
+      },
+      "contactInfo": {
+        "heading": "Contact Information",
+        "labels": {
+          "email": "Email *",
+          "mobile": "Mobile *",
+          "phone": "Phone"
+        }
+      },
+      "employmentInfo": {
+        "heading": "Employment Information",
+        "labels": {
+          "employeeNo": "Employee No",
+          "userCode": "User Code",
+          "position": "Position",
+          "department": "Department *",
+          "employmentType": "Employment Type",
+          "status": "Status"
+        },
+        "employmentTypes": {
+          "fullTime": "Full-time",
+          "partTime": "Part-time",
+          "contract": "Contract",
+          "intern": "Intern"
+        },
+        "statusOptions": {
+          "active": "Active",
+          "inactive": "Inactive"
+        },
+        "selectDepartmentPlaceholder": "-- Select Department --",
+        "loadingDepartments": "Loading Departments..."
+      },
+      "additionalInfo": {
+        "heading": "Additional Information",
+        "labels": {
+          "dob": "Date of Birth",
+          "gender": "Gender",
+          "joinDate": "Join Date",
+          "address": "Address",
+          "workLocation": "Work Location",
+          "manager": "Manager"
+        },
+        "genderOptions": {
+          "male": "Male",
+          "female": "Female",
+          "other": "Other"
+        }
+      }
+    },
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Email is invalid",
+      "mobileRequired": "Mobile number is required",
+      "departmentRequired": "Department is required",
+      "loadDepartmentsFailed": "Failed to load departments",
+      "employeeNotFound": "Employee not found",
+      "loadEmployeeFailed": "Failed to load employee details",
+      "uploadPhotoFailed": "Failed to upload photo",
+      "invalidImageFormat": "Please select a valid image file (JPEG, PNG, GIF)",
+      "fileSizeExceeded": "File size must be less than 5MB"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "save": "Save Changes",
+      "saving": "Saving..."
+    },
+    "confirm": {
+      "title": "Confirm Update",
+      "message": "Are you sure you want to update \"{firstName} {lastName}\"?"
+    },
+    "notifications": {
+      "updateSuccess": "Employee updated successfully!",
+      "updateFailed": "Failed to update employee"
+    }
+  },
+  "searchEmployee": {
+    "title": "Search Employees",
+    "searchPlaceholder": "Search by name, employee number, or email...",
+    "searchButton": "Search",
+    "searchingButton": "Searching...",
+    "errorLoading": "Failed to load Employees .",
+    "retryButton": "Retry",
+    "resultsHeader": "Search Results ({{count}})",
+    "noResults": "No employees found matching your criteria.",
+    "quickAdd": "+ Add New Employee",
+    "employeeCard": {
+      "employeeNo": "Employee No:",
+      "department": "Department:",
+      "email": "Email:",
+      "mobile": "Mobile:",
+      "departmentName": "Department:",
+      "position": "Position:",
+      "stats": {
+        "devicesAssigned": "Devices Assigned",
+        "lastActive": "Last Active"
+      },
+      "actions": {
+        "viewProfile": "View Profile",
+        "edit": "Edit"
+      }
+    },
+    "pagination": {
+      "showingPage": "Showing page {{currentPage}} of {{totalPages}}",
+      "range": "({{start}} - {{end}} of {{total}} employees)"
+    }
+  },
+  "viewEmployee": {
+    "backButton": "← Back to Employees",
+    "title": "Employee Profile",
+    "photoHeading": "Profile Photo",
+    "sections": {
+      "employeeInfo": {
+        "heading": "Employee Information",
+        "labels": {
+          "employeeNo": "Employee No",
+          "userCode": "User Code",
+          "position": "Position",
+          "department": "Department",
+          "status": "Status"
+        },
+        "status": {
+          "active": "Active",
+          "inactive": "Inactive"
+        }
+      },
+      "personalInfo": {
+        "heading": "Personal Information",
+        "labels": {
+          "fullNameEn": "Full Name (English)",
+          "fullNameAr": "Full Name (Arabic)",
+          "dob": "Date of Birth",
+          "gender": "Gender"
+        }
+      },
+      "contactInfo": {
+        "heading": "Contact Information",
+        "labels": {
+          "email": "Email",
+          "mobile": "Mobile",
+          "phone": "Phone",
+          "address": "Address"
+        }
+      },
+      "employmentDetails": {
+        "heading": "Employment Details",
+        "labels": {
+          "joinDate": "Join Date",
+          "employmentType": "Employment Type",
+          "workLocation": "Work Location",
+          "manager": "Manager"
+        }
+      }
+    },
+    "errors": {
+      "loadEmployeeFailed": "Failed to load employee details",
+      "employeeNotFound": "Employee not found"
+    }
+  }
+}

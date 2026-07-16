@@ -228,14 +228,6 @@
   background-color: #3498db;
 }
 
-.search-input-group input {
-  flex: 1;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
 /* Results Section */
 .results-section h3 {
   margin-bottom: 15px;

@@ -1,0 +1,140 @@
+/* TemplateCard.css */
+.template-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 150px;
+}
+
+.template-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #dee2e6;
+  transform: translateY(-2px);
+}
+
+.template-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.template-card-header h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+  word-break: break-word;
+  flex: 1;
+}
+
+.template-card-header .badge {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Badge variants (reuse from RoleCard.css) */
+.badge.bg-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+.badge.bg-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+.badge.bg-success {
+  background-color: #28a745;
+  color: #fff;
+}
+.badge.bg-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+.badge.bg-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.template-description {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.85rem;
+  color: #6c757d;
+  line-height: 1.4;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.template-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f1f3f5;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.template-card-footer .btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.template-card-footer .btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.template-card-footer .btn-info:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+.template-card-footer .btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.template-card-footer .btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .template-card {
+    padding: 0.75rem;
+    min-height: 120px;
+  }
+  .template-card-header h5 {
+    font-size: 0.9rem;
+  }
+  .template-description {
+    font-size: 0.8rem;
+  }
+  .template-card-footer .btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+}

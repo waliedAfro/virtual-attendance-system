@@ -1,0 +1,23 @@
+{
+    "mainNavigation": "Main navigation",
+    "toggleMenu": "Toggle menu",
+    "appName": "Smart Logs",
+    "welcome": "Welcome",
+    "guest": "Guest",
+    "user": "User",
+    "avatar" : "avatar",
+    "userAvatar" : "User avatar",
+    "userMenu" : "User menu",
+    "language" : "Language",
+    "languageSelection" : "Language selection",
+    "english" : "English",
+    "arabic" : "العربية (Arabic)",
+    "selected":"Selected" ,
+    "changePassword":"Change Password", 
+    "logout":"Logout",
+    "confirmLogout":"Are you sure you want to logout?",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+
+
+}

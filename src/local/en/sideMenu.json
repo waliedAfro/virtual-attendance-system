@@ -1,0 +1,69 @@
+{
+  "menu": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "company": {
+      "title": "Company",
+      "info": "Company Info"
+    },
+    "subscription": {
+      "title": "Subscriptions",
+      "manage": "Subscriptions",
+      "licenses": "User Licenses"
+    },
+    "billing": {
+      "title": "Billing",
+      "dashboard": "Dashboard",
+      "invoices": "Invoices",
+      "payments": "Payments",
+      "methods": "Payment Methods",
+      "revenueReports": "Revenue Reports"
+    },
+    "device": {
+      "title": "Device",
+      "search": "Search Device",
+      "add": "Add Device"
+    },
+    "location": {
+      "title": "Location",
+      "search": "Search Location",
+      "add": "Add Location"
+    },
+    "hr": {
+      "title": "HR",
+      "searchEmployee": "Search Employee",
+      "addEmployee": "Add Employee",
+      "shiftAssignment": "Shift Assignment"
+    },
+    "reports": {
+      "title": "Reports",
+      "headers": {
+        "attendance": "Attendance",
+        "financial": "Financial"
+      },
+      "dailyAttendance": "Daily Attendance Report",
+      "attendance": "Attendance Report",
+      "absent": "Absent Report",
+      "details": "Details Report",
+      "revenue": "Revenue Report",
+      "invoice": "Invoice Report",
+      "payment": "Payment Report"
+    },
+    "settings": {
+      "title": "Settings",
+      "headers": {
+        "general": "General",
+        "billing": "Billing Settings"
+      },
+      "shiftManagement": "Shift Management",
+      "departmentManagement": "Department Management",
+      "editUser": "Edit User",
+      "rolesPermissions": "Roles & Permissions",
+      "userAssign": "User & Assign",
+      "taxRates": "Tax Rates",
+      "paymentTerms": "Payment Terms",
+      "currencySettings": "Currency Settings"
+    },
+    "help": "Help"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "departmentManagement": {
+    "title": "Department Management",
+    "subtitle": "Create and manage organizational Departments",
+    "addDepartment": "Add Department",
+    "searchByNamePlaceholder": "Search by Name...",
+    "searchByCodePlaceholder": "Code...",
+    "allStatuses": "All Statuses",
+    "activeOnly": "Active Only",
+    "inactiveOnly": "Inactive Only",
+    "sn": "S/N",
+    "code": "Code",
+    "nameEn": "Name (EN)",
+    "nameAr": "Name (AR)",
+    "status": "Status",
+    "actions": "Actions",
+    "active": "Active",
+    "inactive": "Inactive",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteModal": {
+      "title": "Delete Department?",
+      "confirmation": "Are you sure you want to delete <strong>{{name}}</strong>? This action cannot be undone.",
+      "confirm": "Confirm Delete",
+      "cancel": "Cancel"
+    },
+    "form": {
+      "newDepartment": "New Department",
+      "editDepartment": "Edit Department",
+      "labelNameEn": "Department Name (English)",
+      "labelNameAr": "Department Name (Arabic)",
+      "labelCode": "Department Code",
+      "labelActiveStatus": "Active Status",
+      "placeholderNameEn": "e.g. Human Resources",
+      "placeholderNameAr": "مثال: الموارد البشرية",
+      "placeholderCode": "e.g. HR-001",
+      "cancel": "Cancel",
+      "saving": "Saving...",
+      "saveChanges": "Save Changes"
+    },
+    "validation": {
+      "englishNameRequired": "English name is required",
+      "arabicNameRequired": "Arabic name is required",
+      "codeRequired": "Department code is required"
+    },
+    "messages": {
+      "loadFailed": "Failed to load departments. Please try again.",
+      "createSuccess": "Department created successfully!",
+      "updateSuccess": "Changes saved successfully!",
+      "deleteSuccess": "{{name}} deleted successfully",
+      "deleteFailed": "Failed to delete department",
+      "saveError": "Error saving data"
+    }
+  }
+}

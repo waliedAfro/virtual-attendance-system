@@ -1,0 +1,8 @@
+.templates-page {
+  padding: 20px;
+}
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}

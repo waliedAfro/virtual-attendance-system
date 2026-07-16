@@ -1,0 +1,101 @@
+/* src/pages/security/rbac/css/permissionMatrix.css */
+.permission-matrix-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #fff;
+}
+
+.permission-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.permission-matrix thead {
+    background: var(--bg);
+    border-bottom: 2px solid var(--border);
+}
+
+.permission-matrix th {
+    padding: 12px 14px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.permission-matrix .matrix-resource-header {
+    text-align: left;
+    min-width: 140px;
+}
+
+.permission-matrix td {
+    padding: 10px 14px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.matrix-resource {
+    font-weight: 500;
+    color: var(--text-primary);
+    text-align: left !important;
+}
+
+.matrix-cell {
+    text-align: center !important;
+}
+
+.matrix-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+    cursor: default;
+}
+
+.permission-matrix tbody tr:hover {
+    background: rgba(45, 140, 255, 0.03);
+}
+
+.matrix-legend {
+    display: flex;
+    gap: 20px;
+    padding: 12px 16px;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.matrix-legend span::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    border-radius: 4px;
+    vertical-align: middle;
+    border: 1.5px solid var(--border);
+}
+
+.matrix-legend span:first-child::before {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .permission-matrix th,
+    .permission-matrix td {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    .permission-matrix .matrix-resource-header {
+        min-width: 80px;
+    }
+    .matrix-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+}

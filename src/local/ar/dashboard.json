@@ -1,0 +1,30 @@
+{
+  "home": {
+    "title": "مرحباً بك في لوحة تحكم SmartLogs",
+    "buttons": {
+      "refresh": "تحديث البيانات",
+      "refreshing": "جاري التحديث...",
+      "logout": "تسجيل الخروج",
+      "retry": "إعادة المحاولة"
+    }
+  },
+  "dashboard": {
+    "currentMonthOverview": "نظرة عامة على الشهر الحالي",
+    "cards": {
+      "activeEmployees": "الموظفون النشطون",
+      "totalCheckIns": "إجمالي تسجيلات الدخول",
+      "onTimeCheckIns": "تسجيلات الدخول في الوقت المحدد",
+      "onTimePercentage": "نسبة الالتزام بالوقت",
+      "averageLateMinutes": "متوسط دقائق التأخير"
+    },
+    "emptyState": "لا توجد بيانات متاحة لهذا الشهر."
+  },
+  "status": {
+    "loadingDashboard": "جاري تحميل لوحة التحكم...",
+    "errorLoading": "فشل تحميل بيانات لوحة التحكم. يرجى المحاولة مرة أخرى."
+  },
+  "formats": {
+    "percentSuffix": "٪",
+    "minutesSuffix": "دقيقة"
+  }
+}

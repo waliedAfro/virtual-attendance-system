@@ -10,7 +10,8 @@ const useApi = (apiCall, initialData = null, immediate = true) => {
       setLoading(true);
       setError(null);
       const result = await apiCall(...args);
-      setData(result);
+      setData(result.data);
+      
       return result;
     } catch (err) {
       setError(err.message);

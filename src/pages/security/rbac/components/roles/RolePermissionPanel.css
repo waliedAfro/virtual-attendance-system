@@ -1,0 +1,98 @@
+/* RolePermissionPanel.css */
+.role-permission-panel {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.375rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  margin-top: 1rem;
+}
+
+.role-permission-panel h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212529;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.75rem;
+}
+
+.role-permission-panel .permission-selector-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom scrollbar for the permission selector */
+.role-permission-panel .permission-selector-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.role-permission-panel .permission-selector-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+.role-permission-panel .permission-selector-wrapper::-webkit-scrollbar-thumb {
+  background: #c1c7cd;
+  border-radius: 3px;
+}
+.role-permission-panel .permission-selector-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a8b0b8;
+}
+
+.role-permission-panel .panel-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.role-permission-panel .panel-actions .btn {
+  padding: 0.375rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s;
+}
+
+.role-permission-panel .panel-actions .btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.role-permission-panel .panel-actions .btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.role-permission-panel .panel-actions .btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Loading state */
+.role-permission-panel .loading-indicator {
+  text-align: center;
+  padding: 2rem 0;
+  color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .role-permission-panel {
+    padding: 1rem;
+  }
+  .role-permission-panel .permission-selector-wrapper {
+    max-height: 300px;
+  }
+  .role-permission-panel .panel-actions {
+    flex-direction: column;
+  }
+  .role-permission-panel .panel-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

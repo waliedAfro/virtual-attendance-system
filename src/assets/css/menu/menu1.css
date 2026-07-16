@@ -1,0 +1,383 @@
+/* ============================================================
+   CSS Variables (Theme)
+   ============================================================ */
+:root {
+  --menu-width: 250px;
+  --menu-collapsed-width: 64px; /* for icon‑only mode */
+  --menu-bg-start: #1e3c72;
+  --menu-bg-end: #2a5298;
+  --menu-text: rgba(255, 255, 255, 0.8);
+  --menu-text-hover: #ffffff;
+  --menu-active-bg: rgba(255, 255, 255, 0.15);
+  --menu-hover-bg: rgba(255, 255, 255, 0.1);
+  --menu-border: rgba(255, 255, 255, 0.1);
+  --menu-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+  --submenu-bg: rgba(0, 0, 0, 0.2);
+
+  /* Accent colours (used for subscriptions, billing, etc.) */
+  --accent-primary: #667eea;
+  --accent-secondary: #764ba2;
+  --accent-green: #10b981;
+  --accent-yellow: #f59e0b;
+  --accent-red: #ef4444;
+  --accent-blue: #3b82f6;
+  --accent-purple: #8b5cf6;
+}
+
+/* ============================================================
+   Base Menu Container
+   ============================================================ */
+.side-menu {
+  width: var(--menu-width);
+  height: 100vh;
+  background: linear-gradient(180deg, var(--menu-bg-start) 0%, var(--menu-bg-end) 100%);
+  color: #fff;
+  position: fixed;
+  left: calc(-1 * var(--menu-width));
+  top: 0;
+  transition: left var(--transition-speed) ease, width var(--transition-speed) ease;
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: var(--menu-shadow);
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+/* Collapsed (closed) state – icon‑only */
+.side-menu:not(.open) {
+  width: var(--menu-collapsed-width);
+  left: 0; /* keep it visible but narrow */
+}
+
+.side-menu:not(.open) .menu-text,
+.side-menu:not(.open) .menu-arrow,
+.side-menu:not(.open) .submenu,
+.side-menu:not(.open) .menu-divider {
+  display: none;
+}
+
+.side-menu:not(.open) .menu-item,
+.side-menu:not(.open) .menu-section-header {
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.side-menu:not(.open) .menu-icon {
+  margin-right: 0;
+  font-size: 1.4rem;
+}
+
+/* ============================================================
+   Scrollbar Styling
+   ============================================================ */
+.side-menu::-webkit-scrollbar {
+  width: 5px;
+}
+.side-menu::-webkit-scrollbar-track {
+  background: var(--menu-border);
+}
+.side-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+.side-menu::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+.menu-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--menu-border);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.menu-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   Menu Items Container
+   ============================================================ */
+.menu-items {
+  padding: 10px 0;
+}
+
+/* ============================================================
+   Base Menu Item
+   ============================================================ */
+.menu-item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  color: var(--menu-text);
+  position: relative;
+}
+
+.menu-item:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-text-hover);
+  padding-left: 25px;
+}
+
+.menu-item.active {
+  background: var(--menu-active-bg);
+  color: var(--menu-text-hover);
+  border-left: 4px solid #4fc3f7;
+  font-weight: 500;
+}
+
+/* Active state for subscription items (override with gradient) */
+.menu-item.active[data-subscription] {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border-left-color: transparent;
+}
+
+.menu-icon {
+  width: 20px;
+  margin-right: 12px;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   Menu Section (with header & submenu)
+   ============================================================ */
+.menu-section {
+  margin: 5px 0;
+}
+
+.menu-section-header {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.menu-section-header:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-text-hover);
+}
+
+.menu-arrow {
+  margin-left: auto;
+  font-size: 0.8rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+/* ============================================================
+   Submenu
+   ============================================================ */
+.submenu {
+  background: var(--submenu-bg);
+  border-left: 2px solid var(--menu-border);
+  margin-left: 20px;
+  overflow: hidden;
+  animation: slideDown var(--transition-speed) ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px; /* enough for typical submenus */
+  }
+}
+
+.submenu-item {
+  padding: 10px 20px 10px 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.submenu-item:hover {
+  background: var(--menu-hover-bg);
+  color: var(--menu-text-hover);
+  padding-left: 45px;
+}
+
+.submenu-item.active {
+  background: var(--menu-active-bg);
+  color: var(--menu-text-hover);
+  font-weight: 500;
+}
+
+/* Nested submenu items (third level) */
+.submenu-item.nested {
+  padding-left: 50px;
+  font-size: 0.85rem;
+}
+
+.submenu-item.nested:hover {
+  padding-left: 55px;
+}
+
+.submenu-icon {
+  width: 16px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.submenu-header {
+  padding: 10px 20px 10px 40px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--menu-border);
+  margin-bottom: 5px;
+}
+
+/* ============================================================
+   Subscription & Billing Specific Overrides
+   ============================================================ */
+
+/* --- Subscription items (left accent line) --- */
+.submenu-item[data-subscription] {
+  position: relative;
+}
+
+.submenu-item[data-subscription]::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 16px;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  border-radius: 0 2px 2px 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.submenu-item[data-subscription]:hover::before,
+.submenu-item[data-subscription].active::before {
+  opacity: 1;
+}
+
+/* --- Icon colours for subscription & billing --- */
+.menu-icon.fa-credit-card,
+.submenu-icon.fa-credit-card { color: var(--accent-primary); }
+.menu-icon.fa-chart-pie,
+.submenu-icon.fa-chart-pie { color: var(--accent-green); }
+.menu-icon.fa-file-contract,
+.submenu-icon.fa-file-contract { color: var(--accent-purple); }
+.menu-icon.fa-dollar-sign,
+.submenu-icon.fa-dollar-sign { color: var(--accent-yellow); }
+.menu-icon.fa-id-card,
+.submenu-icon.fa-id-card { color: var(--accent-blue); }
+
+/* Billing section header icon colour */
+.menu-section-header[data-billing] .menu-icon {
+  color: var(--accent-green);
+}
+
+/* --- Status indicators (dot) --- */
+.status-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.status-active   { background-color: var(--accent-green); }
+.status-inactive { background-color: var(--accent-red); }
+.status-pending  { background-color: var(--accent-yellow); }
+
+/* --- Badges (subscription counts, invoice status) --- */
+.subscription-badge,
+.invoice-badge {
+  position: absolute;
+  right: 15px;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.subscription-badge {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  color: #fff;
+}
+
+.invoice-badge {
+  /* background set by modifier classes */
+}
+.invoice-badge.badge-paid     { background-color: var(--accent-green); color: #fff; }
+.invoice-badge.badge-pending  { background-color: var(--accent-yellow); color: #fff; }
+.invoice-badge.badge-overdue  { background-color: var(--accent-red); color: #fff; }
+.invoice-badge.badge-draft    { background-color: #6b7280; color: #fff; }
+
+/* --- Financial amount indicators --- */
+.amount-indicator {
+  font-weight: 600;
+  font-size: 14px;
+}
+.amount-positive { color: var(--accent-green); }
+.amount-negative { color: var(--accent-red); }
+.amount-neutral  { color: #6b7280; }
+
+/* ============================================================
+   Divider
+   ============================================================ */
+.menu-divider {
+  height: 1px;
+  background: var(--menu-border);
+  margin: 15px 20px;
+}
+
+/* ============================================================
+   Responsive Adjustments
+   ============================================================ */
+@media (max-width: 768px) {
+  :root {
+    --menu-width: 220px;
+    --menu-collapsed-width: 56px;
+  }
+
+  .side-menu:not(.open) {
+    width: var(--menu-collapsed-width);
+  }
+
+  .side-menu.open {
+    width: var(--menu-width);
+    left: 0;
+  }
+
+  .menu-title {
+    font-size: 1rem;
+  }
+}

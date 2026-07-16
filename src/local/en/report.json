@@ -1,0 +1,150 @@
+{
+  "attendanceReport": {
+    "title": "HR Attendance Report",
+    "subtitle": "Employee-wise check‑in / check‑out summary per day",
+    "exportCsv": "Export CSV",
+    "exportPdf": "PDF",
+    "stats": {
+      "totalEmployees": "TOTAL EMPLOYEES",
+      "completeRate": "COMPLETE RATE",
+      "avgWorkingHours": "AVG. WORKING HOURS"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by employee name...",
+      "allDepartments": "All Departments",
+      "clearFilters": "Clear Filters",
+      "dateRangeSeparator": "—"
+    },
+    "summary": "Showing {{total}} employee‑day records",
+    "table": {
+      "employee": "Employee",
+      "department": "Department",
+      "date": "Date",
+      "checkIn": "Check In",
+      "checkOut": "Check Out",
+      "status": "Status",
+      "workingHours": "Working Hours"
+    },
+    "noData": "No records found",
+    "loading": "Loading...",
+    "pagination": {
+      "first": "First",
+      "previous": "Previous",
+      "next": "Next",
+      "last": "Last",
+      "pageInfo": "Page {{current}} of {{total}}",
+      "show": "Show",
+      "entries": "entries"
+    },
+    "modal": {
+      "noImage": "No image"
+    },
+    "notifications": {
+      "error": "Something went wrong",
+      "loadFailed": "Failed to load report"
+    }
+  },
+  "dailyAttendanceReport": {
+    "title": "Attendance Report",
+    "subtitle": "Monitoring SmartLogs Activity",
+    "exportData": "Export Data",
+    "stats": {
+      "activeUsers": "ACTIVE USERS",
+      "onTime": "ON-TIME",
+      "avgLate": "AVG. LATE"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by employee name...",
+      "allDepartments": " -- Select All Departments --- ",
+      "allDevices": " -- Select All Devices --- ",
+      "searchButton": "search"
+    },
+    "table": {
+      "employee": "Employee",
+      "department": "Department",
+      "date": "Date",
+      "checkIn": "Check-In",
+      "time": "Time",
+      "status": "Status",
+      "result": "Result",
+      "deviceLocation": "Device / Location",
+      "image": "Image"
+    },
+    "noData": "No matching records found",
+    "pagination": {
+      "first": "First",
+      "previous": "Previous",
+      "next": "Next",
+      "last": "Last",
+      "pageInfo": "Page {{current}} of {{total}}",
+      "show": "Show",
+      "entries": "entries"
+    },
+    "imageTrigger": {
+      "show": "Show Image",
+      "loading": "Loading..."
+    },
+    "modal": {
+      "noImage": "No image to display"
+    },
+    "notifications": {
+      "invalidDateRange": "The selected date range is too long or invalid.",
+      "invalidPageSize": "The requested page size is not allowed.",
+      "unauthorized": "You do not have permission to perform this action.",
+      "unexpected": "An unexpected error occurred."
+    }
+  },
+  "detailAttendanceReport": {
+    "title": "Attendance Report",
+    "subtitle": "Check‑in / Check‑out events with advanced filters",
+    "exportCsv": "Export CSV",
+    "stats": {
+      "totalEmployees": "TOTAL EMPLOYEES",
+      "onTimeRate": "ON-TIME RATE",
+      "avgLateMin": "AVG. LATE (min)"
+    },
+    "filters": {
+      "searchPlaceholder": "Search by employee name...",
+      "allDepartments": " -- Select All Departments --- ",
+      "allDevices": " -- Select All Devices --- ",
+      "allEvents": "All Events",
+      "checkInOnly": "Check In only",
+      "checkOutOnly": "Check Out only",
+      "clearFilters": "Clear Filters"
+    },
+    "summary": "Showing {{total}} events",
+    "table": {
+      "employee": "Employee",
+      "department": "Department",
+      "deviceLocation": "Device / Location",
+      "date": "Date",
+      "eventType": "Event Type",
+      "time": "Time",
+      "status": "Status",
+      "image": "Image"
+    },
+    "noData": "No events match the selected filters",
+    "pagination": {
+      "first": "First",
+      "previous": "Previous",
+      "next": "Next",
+      "last": "Last",
+      "pageInfo": "Page {{current}} of {{total}}",
+      "show": "Show",
+      "entries": "entries"
+    },
+    "imageTrigger": {
+      "show": "Show Image",
+      "loading": "Loading..."
+    },
+    "modal": {
+      "noImage": "No image to display"
+    },
+    "notifications": {
+      "invalidDateRange": "The selected date range is too long or invalid.",
+      "invalidPageSize": "The requested page size is not allowed.",
+      "unauthorized": "You do not have permission to perform this action.",
+      "unexpected": "An unexpected error occurred."
+    }
+  }
+}

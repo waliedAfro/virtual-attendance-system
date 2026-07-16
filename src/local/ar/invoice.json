@@ -1,0 +1,39 @@
+{
+  "paymentManagement": {
+    "title": "سجل المدفوعات",
+    "subtitle": "عرض وتنزيل إيصالات معاملاتك السابقة",
+    "exportCsv": "تصدير CSV",
+    "searchPlaceholder": "البحث برقم الفاتورة أو المرجع...",
+    "filterAll": "الكل",
+    "filterSuccessful": "ناجحة",
+    "filterFailed": "فاشلة",
+    "filterRefunded": "مستردة",
+    "filterPending": "قيد الانتظار",
+    "tableHeaders": {
+      "date": "التاريخ",
+      "invoiceReference": "الفاتورة / المرجع",
+      "method": "طريقة الدفع",
+      "amount": "المبلغ",
+      "paidDate": "تاريخ الدفع",
+      "status": "الحالة",
+      "action": "الإجراء"
+    },
+    "statuses": {
+      "SUCCESSFUL": "ناجحة",
+      "FAILED": "فاشلة",
+      "REFUNDED": "مستردة",
+      "PENDING": "قيد الانتظار",
+      "PAID": "مدفوعة"
+    },
+    "totalPaidYTD": "إجمالي المدفوعات (منذ بداية العام)",
+    "yearPeriod": "الفترة الزمنية",
+    "lastPayment": "آخر عملية دفع",
+    "verifiedTransaction": "معاملة معتمدة",
+    "downloadReceipt": "تنزيل الإيصال",
+    "loading": "جاري التحميل...",
+    "noPayments": "لم يتم العثور على مدفوعات."
+  },
+  "common": {
+    "noData": "—"
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "assignLicenseModal": {
+    "title": "تعيين رخصة جديدة",
+    "subscriptionId": "رقم الاشتراك *",
+    "deviceId": "معرف الجهاز (اختياري)",
+    "cancel": "إلغاء",
+    "assign": "تعيين",
+    "assigning": "جاري التعيين..."
+  },
+  "assignUserModal": {
+    "title": "تعيين مستخدم للاشتراك",
+    "selectUser": "اختر المستخدم *",
+    "deviceId": "معرف الجهاز (اختياري)",
+    "cancel": "إلغاء",
+    "assign": "تعيين",
+    "assigning": "جاري التعيين...",
+    "loadingUsers": "جاري تحميل المستخدمين...",
+    "chooseUser": "-- اختر مستخدماً --"
+  },
+  "licenseTable": {
+    "headers": {
+      "licenseId": "رقم الرخصة",
+      "subscription": "الاشتراك",
+      "device": "الجهاز",
+      "assignedAt": "تاريخ التعيين",
+      "revokedAt": "تاريخ الإلغاء",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "ACTIVE": "نشط",
+      "REVOKED": "ملغي",
+      "EXPIRED": "منتهي الصلاحية",
+      "PENDING": "قيد الانتظار"
+    },
+    "revoke": "إلغاء الرخصة",
+    "empty": "لم يتم العثور على رخص."
+  },
+  "subscriptionLicenses": {
+    "title": "تعيين مستخدم للاشتراك",
+    "subscriptionLabel": "الاشتراك",
+    "userLabel": "المستخدم",
+    "selectButton": "تحديد",
+    "assignButton": "تعيين مستخدم",
+    "assigning": "جاري التعيين...",
+    "removeButton": "إزالة",
+    "assignedUsersTable": {
+      "headers": {
+        "user": "المستخدم",
+        "email": "البريد الإلكتروني",
+        "assignedDate": "تاريخ التعيين",
+        "action": "الإجراء"
+      },
+      "empty": "لا يوجد مستخدمون معينون لهذا الاشتراك",
+      "noSubscriptionSelected": "يرجى اختيار اشتراك لعرض المستخدمين المعينين له."
+    },
+    "userModal": {
+      "title": "اختر المستخدم",
+      "searchPlaceholder": "ابحث بالاسم أو البريد الإلكتروني...",
+      "loading": "جاري تحميل المستخدمين...",
+      "tableHeaders": {
+        "sn": "الرقم التسلسلي",
+        "name": "الاسم",
+        "code": "الرمز",
+        "mobile": "رقم الجوال",
+        "email": "البريد الإلكتروني",
+        "status": "الحالة",
+        "employeeNo": "الرقم الوظيفي",
+        "action": "الإجراء"
+      },
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "paginationInfo": "عرض الصفحة {currentPage} من {totalPages} (الموظفون {start} - {end} من أصل {total})",
+      "noResults": "لم يتم العثور على موظفين يطابقون معايير البحث الخاصة بك."
+    },
+    "confirmations": {
+      "assign": {
+        "title": "هل أنت متأكد؟",
+        "text": "أنت على وشك تعيين هذا المستخدم لهذا الاشتراك.",
+        "confirmButton": "نعم، تعيين",
+        "cancelButton": "إلغاء"
+      },
+      "remove": {
+        "title": "هل أنت متأكد؟",
+        "text": "أنت على وشك إزالة هذا المستخدم من الاشتراك.",
+        "confirmButton": "نعم، إزالة",
+        "cancelButton": "إلغاء"
+      }
+    },
+    "toasts": {
+      "assignSuccess": "تم تعيين المستخدم بنجاح",
+      "assignError": "فشل تعيين المستخدم. يرجى المحاولة مرة أخرى.",
+      "removeSuccess": "تمت إزالة المستخدم بنجاح",
+      "removeError": "فشل إزالة المستخدم. يرجى المحاولة مرة أخرى.",
+      "loading": "جاري تعيين المستخدم...",
+      "removing": "جاري إزالة المستخدم..."
+    },
+    "errors": {
+      "loadSubscriptions": "فشل تحميل الاشتراكات. يرجى تحديث الصفحة.",
+      "loadEmployees": "فشل تحميل الموظفين.",
+      "loadAssigned": "فشل تحميل المستخدمين المعينين.",
+      "invalidSelection": "يرجى اختيار كل من الاشتراك والمستخدم.",
+      "invalidUser": "اختيار المستخدم غير صالح."
+    }
+  },
+  "subscription": {
+    "title": "الاشتراك في الخدمات",
+    "subtitle": "اختر الخطة المثالية لاحتياجات عملك",
+    "stepper": {
+      "steps": ["اختر الخدمة", "اختر الخطة", "التهيئة", "التأكيد"]
+    },
+    "serviceCard": {
+      "availablePlans": "الخطط المتاحة: {count}",
+      "viewPlans": "عرض الخطط",
+      "backToServices": "العودة للخدمات"
+    },
+    "planCard": {
+      "popular": "⭐ شائع",
+      "selectPlan": "اختر الخطة",
+      "selected": "✓ تم الاختيار",
+      "plans": "الخطط"
+    },
+    "billingCycle": {
+      "monthly": "شهرياً",
+      "yearly": "سنوياً (وفر 20%)"
+    },
+    "configureForm": {
+      "title": "تهيئة الاشتراك الخاص بك",
+      "selectedPlan": "الخطة المختارة",
+      "price": "السعر: {price} ر.ق / {interval}",
+      "numberOfLicenses": "عدد الرخص",
+      "autoRenew": "تجديد الاشتراك تلقائياً",
+      "orderSummary": "ملخص الطلب",
+      "basePrice": "السعر الأساسي:",
+      "licenses": "الرخص:",
+      "total": "الإجمالي:",
+      "back": "رجوع",
+      "continue": "المتابعة للتأكيد"
+    },
+    "confirmation": {
+      "title": "تأكيد الاشتراك الخاص بك",
+      "service": "الخدمة",
+      "plan": "الخطة",
+      "billingCycle": "دورة الفوترة",
+      "licenses": "الرخص",
+      "autoRenew": "تجديد تلقائي",
+      "totalAmount": "المبلغ الإجمالي",
+      "back": "رجوع",
+      "confirm": "تأكيد والاشتراك",
+      "yes": "نعم",
+      "no": "لا"
+    },
+    "subscriptionList": {
+      "title": "اشتراكاتك النشطة",
+      "refresh": "تحديث الاشتراكات",
+      "renew": "تجديد / تحديث",
+      "cancel": "إلغاء الاشتراك",
+      "card": {
+        "licenses": "الرخص",
+        "billingCycle": "دورة الفوترة",
+        "startDate": "تاريخ البدء",
+        "endDate": "تاريخ الانتهاء",
+        "paymentStatus": "حالة الدفع",
+        "amount": "المبلغ",
+        "pay": "دفع",
+        "autoRenewBadge": "التجديد التلقائي مفعّل"
+      },
+      "status": {
+        "INCOMPLETE": "غير مكتمل",
+        "ACTIVE": "نشط",
+        "SUSPENDED": "معلق",
+        "EXPIRED": "منتهي الصلاحية",
+        "CANCELLED": "ملغي"
+      }
+    },
+    "cancelDialog": {
+      "title": "إلغاء الاشتراك",
+      "text": "هل أنت متأكد من أنك تريد إلغاء هذا الاشتراك؟ لا يمكن التراجع عن هذا الإجراء.",
+      "keep": "لا، الاحتفاظ به",
+      "confirm": "نعم، إلغاء الاشتراك"
+    },
+    "renewDialog": {
+      "title": "تجديد / تحديث الاشتراك",
+      "text": "تحديث عدد الرخص الخاصة باشتراكك.",
+      "numberOfLicenses": "عدد الرخص",
+      "cancel": "إلغاء",
+      "update": "تحديث الاشتراك"
+    },
+    "success": {
+      "title": "تم الاشتراك بنجاح!",
+      "message": "لقد اشتركت بنجاح في {service} - خطة {plan}",
+      "details": "سيكون اشتراكك نشطاً بعد إتمام عملية الدفع مع {licenses} رخصة",
+      "dashboard": "الذهاب إلى لوحة التحكم"
+    },
+    "loading": "جاري التحميل...",
+    "error": {
+      "dismiss": "تجاهل"
+    }
+  },
+  "userLicenses": {
+    "title": "رخص المستخدمين",
+    "assignNew": "تعيين رخصة جديدة",
+    "loading": "جاري تحميل الرخص...",
+    "error": "خطأ في تحميل الرخص: {error}",
+    "missingUserId": "معرف المستخدم مفقود",
+    "revokeConfirmation": {
+      "title": "هل أنت متأكد؟",
+      "text": "هل أنت متأكد من أنك تريد إلغاء هذه الرخصة؟",
+      "confirm": "نعم، إلغاء الرخصة",
+      "cancel": "إلغاء"
+    }
+  }
+}

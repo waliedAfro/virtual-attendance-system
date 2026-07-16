@@ -1,0 +1,69 @@
+{
+  "menu": {
+    "home": "الرئيسية",
+    "dashboard": "لوحة التحكم",
+    "company": {
+      "title": "الشركة",
+      "info": "بيانات الشركة"
+    },
+    "subscription": {
+      "title": "الاشتراكات",
+      "manage": "الاشتراكات",
+      "licenses": "تراخيص المستخدمين"
+    },
+    "billing": {
+      "title": "الفواتير والمالية",
+      "dashboard": "لوحة التحكم",
+      "invoices": "الفواتير",
+      "payments": "المدفوعات",
+      "methods": "طرق الدفع",
+      "revenueReports": "تقارير الإيرادات"
+    },
+    "device": {
+      "title": "الأجهزة",
+      "search": "بحث عن جهاز",
+      "add": "إضافة جهاز"
+    },
+    "location": {
+      "title": "المواقع",
+      "search": "بحث عن موقع",
+      "add": "إضافة موقع"
+    },
+    "hr": {
+      "title": "الموارد البشرية",
+      "searchEmployee": "بحث عن موظف",
+      "addEmployee": "إضافة موظف",
+      "shiftAssignment": "توزيع الفترات / الورديات"
+    },
+    "reports": {
+      "title": "التقارير",
+      "headers": {
+        "attendance": "الحضور والانصراف",
+        "financial": "التقارير المالية"
+      },
+      "dailyAttendance": "تقرير الحضور اليومي",
+      "attendance": "تقرير الحضور",
+      "absent": "تقرير الغياب",
+      "details": "تقرير التفاصيل",
+      "revenue": "تقرير الإيرادات",
+      "invoice": "تقرير الفواتير",
+      "payment": "تقرير المدفوعات"
+    },
+    "settings": {
+      "title": "الإعدادات",
+      "headers": {
+        "general": "إعدادات عامة",
+        "billing": "إعدادات الفواتير"
+      },
+      "shiftManagement": "إدارة الفترات / الورديات",
+      "departmentManagement": "إدارة الأقسام",
+      "editUser": "تعديل المستخدم",
+      "rolesPermissions": "الأدوار والصلاحيات",
+      "userAssign": "المستخدمين والتعيين",
+      "taxRates": "نسب الضرائب",
+      "paymentTerms": "شروط الدفع",
+      "currencySettings": "إعدادات العملة"
+    },
+    "help": "المساعدة"
+  }
+}

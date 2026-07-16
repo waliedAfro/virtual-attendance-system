@@ -1,0 +1,111 @@
+{
+  
+
+  "rbac": {
+    "common" :{
+    "remove": "remove",
+    "edit": "edit" ,
+    "loading" : "Loading .." ,
+    "delete" : "Delete"
+  } ,
+    "dashboard": {
+      "title": "لوحة التحكم RBAC",
+      "subtitle": "نظرة عامة على الأدوار والصلاحيات والقوالب",
+      "totalRoles": "إجمالي الأدوار",
+      "totalPermissions": "إجمالي الصلاحيات",
+      "totalTemplates": "إجمالي القوالب",
+      "recentRoles": "أحدث الأدوار",
+      "recentTemplates": "أحدث القوالب"
+    },
+    "roles": {
+      "title": "الأدوار",
+      "subtitle": "إدارة الأدوار وصلاحياتها",
+      "createNew": "إنشاء دور",
+      "name": "الاسم",
+      "description": "الوصف",
+      "type": "النوع",
+      "permissions": "الصلاحيات",
+      "search": "البحث عن دور...",
+      "deleteConfirmTitle": "حذف الدور",
+      "deleteConfirmMessage": "هل أنت متأكد من حذف هذا الدور؟",
+      "clone": "نسخ الدور",
+      "cloneTitle": "نسخ {{name}}",
+      "cloneConfirmMessage": "سيؤدي هذا إلى إنشاء نسخة مكررة من الدور مع جميع الصلاحيات."
+    },
+    "templates": {
+      "title": "قوالب الأدوار",
+      "subtitle": "مجموعات صلاحيات محددة مسبقًا للأدوار",
+      "createNew": "إنشاء قالب",
+      "permissionsFor": "الصلاحيات لـ {{name}}",
+      "deleteConfirmTitle": "حذف القالب",
+      "deleteConfirmMessage": "هل أنت متأكد من حذف هذا القالب؟"
+    },
+    "permissions": {
+      "title": "الصلاحيات",
+      "subtitle": "عرض جميع الصلاحيات وتراتبها",
+      "treeView": "عرض شجري",
+      "matrixView": "عرض مصفوفي"
+    }, 
+    "permissionGroups": {
+      "title": "مجموعات الصلاحيات",
+      "subtitle": "إدارة مجموعات الصلاحيات الخاصة بك",
+      "createNew": "إنشاء مجموعة جديدة",
+      "createGroup": "إنشاء مجموعة",
+      "editGroup": "تعديل المجموعة",
+      "groupCode": "الرمز",
+      "groupName": "الاسم",
+      "groupNameAr": "الاسم (بالعربية)",
+      "module": "النظام الفرعي / الوحدة",
+      "moduleAr": "النظام الفرعي / الوحدة (بالعربية)",
+      "icon": "الأيقونة",
+      "displayOrder": "ترتيب العرض",
+      "description": "الوصف",
+      "color": "اللون",
+      "actions": "الإجراءات",
+      "confirmDelete": "هل أنت متأكد من رغبتك في حذف هذه المجموعة؟",
+      "listTitle": "قائمة المجموعات",
+      "noGroups": "لم يتم العثور على مجموعات",
+      "create": "إنشاء",
+      "update": "تحديث",
+      "cancel": "إلغاء",
+      "active" : "نشط" ,
+      "permissions" : "الصلاحيات" ,
+
+       "groupIdentity": "هوية المجموعة", 
+    "moduleSettings": "النظام والمظهر", 
+    "definePermissions": "تحديد الصلاحيات المرتبطة", 
+    "addPermissionRow": "إضافة صلاحية جديدة", 
+    "permissionCode": "رمز الصلاحية", 
+        "permissionName": "الاسم (EN)", 
+    "permissionNameAr": "الاسم (AR)", 
+    "permissionModule": "الوحدة/النظام", 
+    "permissionOrder": "الترتيب", 
+    "permissionDescription": "وصف الصلاحية", 
+    "addToList": "إضافة إلى القائمة", 
+    "noPermissionsAdded": "لم يتم إضافة أي صلاحيات لهذه المجموعة بعد.", 
+    "permissionCodeRequired": "رمز الصلاحية مطلوب.", 
+    "requiredGroupCode": "رمز المجموعة مطلوب.", 
+    "maxLength50": "الحد الأقصى هو 50 حرفاً.", 
+    "requiredGroupName": "اسم المجموعة (إنجليزي) مطلوب.", 
+    "maxLength100": "الحد الأقصى هو 100 حرف.", 
+    "requiredGroupNameAr": "اسم المجموعة (عربي) مطلوب.",
+    "requiredDisplayOrder": "ترتيب العرض مطلوب.", 
+    "maxLength500": "الحد الأقصى هو 500 حرف.", 
+    "fixErrors": "يرجى تصحيح الأخطاء قبل الإرسال.", 
+    "saveError": "حدث خطأ أثناء حفظ المجموعة. يرجى المحاولة مرة أخرى." 
+    },
+    "userAssignments": {
+      "title": "تعيينات أدوار المستخدمين",
+      "subtitle": "تعيين الأدوار للمستخدمين"
+    }
+  },
+  "common": {
+    "actions": "الإجراءات",
+    "view": "عرض",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "loading": "جاري التحميل...",
+    "search": "بحث"
+  }
+}

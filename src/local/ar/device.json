@@ -1,0 +1,218 @@
+{
+  "addDevice": {
+    "title": "إضافة جهاز",
+    "deviceNameLabel": "اسم الجهاز",
+    "deviceNamePlaceholder": "اسم الجهاز (مثال: المدخل الرئيسي الشمالي)",
+    "deviceTypeLabel": "نوع الجهاز",
+    "deviceTypeSelectDefault": "-- اختر نوع الجهاز --",
+    "deviceTypeOptions": {
+      "qr": "جهاز رمز الاستجابة السريعة (QR Code)",
+      "vr": "جهاز الواقع الافتراضي (VR)",
+      "ips": "جهاز نظام تحديد المواقع الداخلي (IPS)"
+    },
+    "locationLabel": "الموقع",
+    "locationLoading": "جاري تحميل المواقع...",
+    "locationSelectDefault": "-- اختر الموقع --",
+    "latitudeLabel": "خط العرض",
+    "latitudePlaceholder": "خط العرض (مثال: 24.7136)",
+    "longitudeLabel": "خط الطول",
+    "longitudePlaceholder": "خط الطول (مثال: 46.6753)",
+    "altitudeLabel": "الارتفاع",
+    "altitudePlaceholder": "الارتفاع بالأمتار (مثال: 600)",
+    "accuracyLabel": "الدقة",
+    "accuracyPlaceholder": "الدقة (± أمتار) (مثال: 15)",
+    "radiusLabel": "نطاق السياج الجغرافي (بالأمتار)",
+    "radiusPlaceholder": "نطاق السياج الجغرافي (بالأمتار) (مثال: 100)",
+    "floorLevelLabel": "رقم الطابق",
+    "floorLevelPlaceholder": "الطابق (مثال: الطابق الأرضي، الطابق 1)",
+    "addButton": "إضافة جهاز",
+    "addingButton": "جاري إضافة الجهاز...",
+    "resetButton": "إعادة تعيين",
+    "errors": {
+      "deviceNameRequired": "اسم الجهاز مطلوب",
+      "latitudeRequired": "خط العرض مطلوب",
+      "longitudeRequired": "خط الطول مطلوب",
+      "altitudeRequired": "الارتفاع مطلوب",
+      "altitudeInteger": "يجب أن يكون الارتفاع رقماً صحيحاً",
+      "altitudePositive": "يجب أن يكون الارتفاع أكبر من 0",
+      "accuracyRequired": "الدقة مطلوبة",
+      "accuracyInteger": "يجب أن تكون الدقة رقماً صحيحاً",
+      "accuracyPositive": "يجب أن تكون الدقة أكبر من 0",
+      "radiusRequired": "نطاق نصف القطر بالأمتار مطلوب",
+      "locationRequired": "الموقع مطلوب",
+      "deviceTypeRequired": "نوع الجهاز مطلوب"
+    },
+    "swal": {
+      "title": "هل أنت متأكد؟",
+      "text": "أنت على وشك إرسال جهاز جديد.",
+      "confirmButton": "نعم، أرسل الجهاز الجديد"
+    },
+    "notifications": {
+      "success": "تم إنشاء الجهاز بنجاح!",
+      "error": "فشل إنشاء الجهاز!"
+    }
+  },
+  "editDevice": {
+    "title": "تعديل الجهاز",
+    "sections": {
+      "basicInformation": "المعلومات الأساسية",
+      "locationInformation": "معلومات الموقع",
+      "geographicCoordinates": "الإحداثيات الجغرافية",
+      "geofenceSettings": "إعدادات السياج الجغرافي",
+      "technicalDetails": "التفاصيل الفنية",
+      "description": "الوصف"
+    },
+    "deviceNameLabel": "اسم الجهاز",
+    "deviceCodeLabel": "رمز الجهاز:",
+    "statusLabel": "الحالة",
+    "statusOptions": {
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "retired": "مستبعد / خارج الخدمة"
+    },
+    "deviceTypeLabel": "نوع الجهاز:",
+    "locationLabel": "الموقع",
+    "locationSelectDefault": "اختر الموقع",
+    "floorLevelLabel": "رقم الطابق",
+    "buildingLabel": "المبنى/الموقع",
+    "latitudeLabel": "خط العرض:",
+    "longitudeLabel": "خط الطول:",
+    "altitudeLabel": "الارتفاع (بالأمتار):",
+    "radiusLabel": "نطاق السياج الجغرافي (بالأمتار)",
+    "accuracyLabel": "الدقة (± أمتار)",
+    "manufacturerLabel": "الشركة المصنعة",
+    "modelLabel": "الطراز",
+    "firmwareLabel": "إصدار البرمجيات الثابتة (Firmware)",
+    "descriptionPlaceholder": "أدخل وصف الجهاز...",
+    "cancelButton": "إلغاء",
+    "saveButton": "حفظ التغييرات",
+    "savingButton": "جاري الحفظ...",
+    "errors": {
+      "deviceNameRequired": "اسم الجهاز مطلوب",
+      "deviceCodeRequired": "رمز الجهاز مطلوب",
+      "statusRequired": "الحالة مطلوبة",
+      "latitudeRange": "يجب أن يكون خط العرض بين -90 و 90",
+      "longitudeRange": "يجب أن يكون خط الطول بين -180 و 180",
+      "radiusPositive": "يجب أن يكون نطاق نصف القطر رقماً موجباً",
+      "accuracyPositive": "يجب أن تكون الدقة رقماً موجباً"
+    },
+    "swal": {
+      "title": "هل أنت متأكد من التحديث؟",
+      "text": "أنت على وشك تحديث هذا الجهاز.",
+      "confirmButton": "نعم، تعيين"
+    },
+    "toast": {
+      "updating": "جاري التحديث...",
+      "success": "تم تعيين المستخدم بنجاح",
+      "failed": "فشل تحديث الجهاز."
+    }
+  },
+  "mapViewModal": {
+    "title": "موقع الجهاز",
+    "fullscreenTooltip": "ملء الشاشة",
+    "exitFullscreenTooltip": "الخروج من وضع ملء الشاشة",
+    "noCoords": {
+      "title": "لا توجد إحداثيات متاحة",
+      "message1": "لا يحتوي هذا الجهاز على إحداثيات موقع صالحة.",
+      "message2": "يرجى تحديث معلومات الجهاز بقيم صالحة لخطوط الطول والعرض."
+    },
+    "coordinates": {
+      "latitude": "خط العرض:",
+      "longitude": "خط الطول:"
+    },
+    "copyTooltip": "نسخ الإحداثيات",
+    "providers": {
+      "google": "خرائط جوجل",
+      "osm": "OpenStreetMap"
+    },
+    "getDirections": "الحصول على الاتجاهات",
+    "loadingMap": "جاري تحميل الخريطة...",
+    "mapError": "فشل تحميل الخريطة. يرجى التحقق من اتصالك بالإنترنت.",
+    "retryButton": "إعادة المحاولة",
+    "locationDetails": {
+      "title": "تفاصيل الموقع",
+      "deviceLabel": "الجهاز:",
+      "codeLabel": "الرمز:",
+      "addressLabel": "العنوان:",
+      "accuracyLabel": "الدقة:",
+      "noAddress": "لا يوجد عنوان متاح",
+      "unknown": "غير معروف"
+    },
+    "openInMaps": "الفتح في الخرائط",
+    "copyCoordinates": "نسخ الإحداثيات",
+    "closeButton": "إغلاق",
+    "openNewTab": "فتح في علامة تبويب جديدة"
+  },
+  "searchDevice": {
+    "title": "البحث عن الأجهزة",
+    "searchPlaceholder": "ابحث حسب اسم الجهاز، الرمز، أو الموقع...",
+    "searchButton": "بحث",
+    "searchingButton": "جاري البحث...",
+    "resultsHeading": "نتائج البحث ({{count}})",
+    "card": {
+      "deviceCode": "رمز الجهاز:",
+      "location": "الموقع:",
+      "floorLevel": "رقم الطابق:",
+      "coordinates": "الإحداثيات:",
+      "altitude": "الارتفاع:",
+      "accuracy": "الدقة:",
+      "radius": "نطاق السياج الجغرافي:",
+      "statusUnknown": "غير معروف"
+    },
+    "viewDetails": "عرض التفاصيل",
+    "edit": "تعديل",
+    "generateQR": "توليد رمز QR جديد",
+    "noResults": "لم يتم العثور على أجهزة تطابق معايير البحث الخاصة بك.",
+    "addNew": "+ إضافة جهاز جديد",
+    "loadError": "فشل تحميل المواقع."
+  },
+  "viewDeviceQR": {
+    "title": "رمز QR الخاص بالجهاز",
+    "loading": "جاري إنشاء رمز أمان (Token)...",
+    "deviceNameLabel": "اسم الجهاز:",
+    "tokenLabel": "رمز الأمان (Token):",
+    "footer": "امسح رمز QR هذا لتسجيل حضورك.",
+    "downloadSVG": "تحميل بصيغة SVG",
+    "print": "طباعة",
+    "savePDF": "حفظ بصيغة PDF",
+    "errorGenerate": "فشل إنشاء رمز الأمان. يرجى المحاولة مرة أخرى.",
+    "errorNoToken": "لم يتم إنشاء رمز أمان. يرجى المحاولة مرة أخرى.",
+    "closeButton": "×"
+  },
+  "viewDevice": {
+    "title": "تفاصيل الجهاز",
+    "sections": {
+      "basicInformation": "المعلومات الأساسية",
+      "locationInformation": "معلومات الموقع",
+      "geographicCoordinates": "الإحداثيات الجغرافية",
+      "geofenceSettings": "إعدادات السياج الجغرافي",
+      "additionalInformation": "معلومات إضافية",
+      "timestamps": "الطوابع الزمنية",
+      "description": "الوصف"
+    },
+    "deviceName": "اسم الجهاز:",
+    "deviceCode": "رمز الجهاز:",
+    "status": "الحالة:",
+    "deviceType": "نوع الجهاز:",
+    "location": "الموقع:",
+    "floorLevel": "رقم الطابق:",
+    "building": "المبنى/الموقع:",
+    "latitude": "خط العرض:",
+    "longitude": "خط الطول:",
+    "altitude": "الارتفاع:",
+    "radius": "نطاق السياج الجغرافي:",
+    "accuracy": "الدقة:",
+    "manufacturer": "الشركة المصنعة:",
+    "model": "الطراز:",
+    "firmware": "إصدار البرمجيات الثابتة:",
+    "createdAt": "تاريخ الإنشاء:",
+    "updatedAt": "آخر تحديث:",
+    "lastCommunication": "آخر اتصال:",
+    "unknown": "غير معروف",
+    "notAvailable": "غير متاح",
+    "closeButton": "إغلاق"
+  },
+  "common": {
+    "close": "إغلاق"
+  }
+}

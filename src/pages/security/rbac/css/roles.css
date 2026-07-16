@@ -1,0 +1,14 @@
+.roles-page {
+  padding: 20px;
+}
+.roles-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.role-details-page {
+  padding: 20px;
+}
+.role-details-content {
+  margin-top: 20px;
+}

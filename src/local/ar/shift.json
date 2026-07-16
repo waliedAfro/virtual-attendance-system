@@ -1,0 +1,189 @@
+{
+  "shiftAssignment": {
+    "common": {
+      "labels": {
+        "user": "المستخدم",
+        "userId": "معرف المستخدم",
+        "shift": "الوردية",
+        "startDate": "تاريخ البدء",
+        "endDate": "تاريخ الانتهاء",
+        "endDateOptional": "تاريخ الانتهاء (اختياري)",
+        "active": "نشط",
+        "activeOnly": "النشطين فقط",
+        "fullName": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "role": "الدور",
+        "department": "القسم",
+        "status": "الحالة",
+        "code": "الرمز",
+        "mobile": "رقم الجوال",
+        "employeeNo": "الرقم الوظيفي",
+        "sn": "م.",
+        "actions": "الإجراءات",
+        "loading": "جاري التحميل...",
+        "selectShift": "اختر وردية"
+      },
+      "buttons": {
+        "select": "تحديد",
+        "search": "بحث",
+        "reset": "إعادة تعيين",
+        "edit": "تعديل",
+        "create": "إنشاء",
+        "update": "تحديث",
+        "backToSearch": "← العودة إلى البحث",
+        "close": "×",
+        "cancel": "إلغاء"
+      },
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "notifications": {
+        "successCreate": "تم تعيين الوردية بنجاح!",
+        "successUpdate": "تم تحديث التعيين بنجاح!",
+        "errShiftAssignNotFound": "تعيين الوردية المطلوب غير موجود!",
+        "errAlreadyHasActive": "المستخدم لديه تعيين وردية نشط بالفعل!",
+        "errAlreadyExistsOnDate": "يوجد تعيين وردية لهذا المستخدم بالفعل في تاريخ البدء المحدد!",
+        "errStartDatePast": "لا يمكن أن يكون تاريخ البدء في الماضي!",
+        "errEndDateComparison": "يجب أن يكون تاريخ الانتهاء أكبر من أو يساوي تاريخ البدء!",
+        "errEndDatePast": "لا يمكن أن يكون تاريخ الانتهاء في الماضي!",
+        "errGenericCreate": "فشل إنشاء التعيين",
+        "errGenericUpdate": "فشل التحديث",
+        "errLoadShifts": "تعذر تحميل الورديات. يرجى إعادة تحديث الصفحة.",
+        "errLoadAssignment": "فشل تحميل تفاصيل التعيين."
+      },
+      "validation": {
+        "userRequired": "المستخدم مطلوب",
+        "shiftRequired": "الوردية مطلوبة",
+        "startDateRequired": "تاريخ البدء مطلوب",
+        "endDateBeforeStart": "لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ البدء"
+      }
+    },
+    "create": {
+      "title": "إنشاء تعيين وردية جديد",
+      "loadingShifts": "جاري تحميل الورديات...",
+      "placeholderSelectUser": "اضغط لاختيار مستخدم",
+      "selectedUserDetailsTitle": "تفاصيل المستخدم المحدد",
+      "btnCreating": "جاري الإنشاء...",
+      "btnCreate": "تأكيد التعيين",
+      "confirmTitle": "تأكيد تعيين الوردية للموظف",
+      "confirmText": "هل أنت متأكد من رغبتك في تعيين الوردية لـ \"{{name}}\"؟"
+    },
+    "search": {
+      "title": "تعيينات الورديات",
+      "btnNewAssignment": "+ تعيين جديد",
+      "placeholderUserId": "أدخل معرف المستخدم",
+      "allShifts": "جميع الورديات",
+      "loadingAssignments": "جاري تحميل التعيينات...",
+      "noAssignmentsFound": "لم يتم العثور على تعيينات.",
+      "pagination": {
+        "first": "الأول",
+        "previous": "السابق",
+        "next": "التالي",
+        "last": "الأخير",
+        "pageInfo": "صفحة {{current}} من {{total}}",
+        "show": "عرض",
+        "entries": "سجلات"
+      }
+    },
+    "update": {
+      "title": "تعديل تعيين الوردية",
+      "loadingAssignment": "جاري تحميل التعيين...",
+      "userDetailsTitle": "تفاصيل المستخدم",
+      "confirmTitle": "تأكيد تحديث تعيين الوردية للموظف",
+      "confirmText": "هل أنت متأكد من رغبتك في تحديث تعيين الوردية لـ \"{{name}}\"؟",
+      "btnUpdate": "تحديث التعيين",
+      "btnUpdating": "جاري التحديث..."
+    },
+    "userModal": {
+      "title": "اختر مستخدم",
+      "placeholderSearch": "ابحث بالاسم أو البريد الإلكتروني...",
+      "loadingUsers": "جاري تحميل المستخدمين...",
+      "noUsersFound": "لم يتم العثور على مستخدمين",
+      "paginationInfo": "عرض {{start}} – {{end}} من أصل {{total}} مستخدم"
+    }
+  },
+  "shiftManagement": {
+    "form": {
+      "titleAdd": "إضافة وردية جديدة",
+      "titleEdit": "تعديل الوردية",
+      "loadingData": "جاري تحميل بيانات الوردية...",
+      "types": {
+        "morning": "صباحي",
+        "evening": "مسائي",
+        "night": "ليلي",
+        "general": "عام",
+        "flexible": "مرن",
+        "rotational": "تناوبي"
+      },
+      "labels": {
+        "shiftName": "اسم الوردية",
+        "shiftType": "نوع الوردية",
+        "startTime": "وقت البدء",
+        "endTime": "وقت الانتهاء",
+        "gracePeriod": "فترة السماح (بالدقائق)",
+        "break": "الاستراحة (بالدقائق)",
+        "allowOvertime": "السماح بالوقت الإضافي",
+        "maxOvertime": "الحد الأقصى للوقت الإضافي (بالدقائق)",
+        "flexibleStartEnd": "وقت بدء / انتهاء مرن",
+        "earlyCheckin": "تسجيل دخول مبكر (بالدقائق)",
+        "lateCheckout": "تسجيل خروج متأخر (بالدقائق)"
+      },
+      "previews": {
+        "crossesMidnight": "تتجاوز منتصف الليل:",
+        "workingMinutes": "دقائق العمل (بعد الاستراحة):",
+        "yes": "نعم",
+        "no": "لا"
+      },
+      "buttons": {
+        "back": "← العودة إلى الورديات",
+        "cancel": "إلغاء",
+        "addShift": "إضافة الوردية",
+        "updateShift": "تحديث الوردية",
+        "adding": "جاري الإضافة...",
+        "updating": "جاري التحديث..."
+      },
+      "notifications": {
+        "successCreate": "تم إضافة الوردية بنجاح!",
+        "successUpdate": "تم تحديث الوردية بنجاح!",
+        "errLoadDetails": "فشل تحميل تفاصيل الوردية",
+        "errFetchGeneric": "فشل تحميل الوردية",
+        "errCreate": "فشل إضافة الوردية",
+        "errUpdate": "فشل تحديث الوردية"
+      },
+      "validation": {
+        "nameRequired": "اسم الوردية مطلوب",
+        "startRequired": "وقت البدء مطلوب",
+        "endRequired": "وقت الانتهاء مطلوب",
+        "invalidDuration": "يجب أن تكون مدة الوردية بعد خصم الاستراحة أكبر من 0 دقيقة",
+        "graceNegative": "لا يمكن أن تكون فترة السماح قيمة سالبة",
+        "breakNegative": "لا يمكن أن تكون دقائق الاستراحة قيمة سالبة",
+        "overtimeRequired": "يجب إدخال دقائق صحيحة للحد الأقصى للوقت الإضافي",
+        "earlyCheckinRequired": "يجب إدخال دقائق صحيحة لتسجيل الدخول المبكر",
+        "lateCheckoutRequired": "يجب إدخال دقائق صحيحة لتسجيل الخروج المتأخر"
+      }
+    },
+    "list": {
+      "title": "إدارة الورديات",
+      "searchTitle": "البحث عن الورديات",
+      "listTitle": "قائمة الورديات",
+      "allTypes": "جميع الأنواع",
+      "placeholderName": "ابحث باسم الوردية...",
+      "btnNewShift": "+ إضافة وردية جديدة",
+      "noShiftsFound": "لم يتم العثور على ورديات. حاول تعديل البحث أو إضافة وردية جديدة.",
+      "table": {
+        "name": "الاسم",
+        "type": "النوع",
+        "start": "البدء",
+        "end": "الانتهاء",
+        "crossDay": "تتجاوز اليوم",
+        "working": "العمل (بالدقائق)",
+        "grace": "السماح",
+        "break": "الاستراحة",
+        "overtime": "الوقت الإضافي",
+        "flexible": "المرونة",
+        "actions": "الإجراءات"
+      }
+    }
+  }
+}

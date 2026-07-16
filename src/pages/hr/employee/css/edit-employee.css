@@ -1,0 +1,373 @@
+/* edit-employee.css - Production Ready */
+/* Matches view-employee.css styling for consistent UI */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Container and Layout */
+.edit-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.edit-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.back-button {
+  background: #f1f5f9;
+  color: #334155;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.back-button:hover,
+.back-button:focus-visible {
+  background: #e2e8f0;
+  outline: 2px solid #94a3b8;
+  outline-offset: 2px;
+}
+
+.edit-container h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Form Sections */
+.edit-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-section {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.form-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Form Grid */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs, Selects, Textareas */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  background: #fff;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #ef4444;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* Photo Section */
+.photo-section {
+  background: #fff;
+}
+
+.photo-upload-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.current-photo {
+  flex-shrink: 0;
+}
+
+.profile-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 3px #e2e8f0;
+  background: #fff;
+}
+
+.photo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  border: 2px dashed #cbd5e1;
+}
+
+.photo-actions {
+  flex: 1;
+}
+
+.photo-upload-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.upload-button,
+.remove-photo-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.upload-button {
+  background: #3b82f6;
+  color: white;
+}
+
+.upload-button:hover,
+.upload-button:focus-visible {
+  background: #2563eb;
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.remove-photo-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.remove-photo-button:hover,
+.remove-photo-button:focus-visible {
+  background: #fecaca;
+  outline: 2px solid #ef4444;
+  outline-offset: 2px;
+}
+
+.uploading-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  color: #3b82f6;
+}
+
+.photo-hint {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Form Actions (Footer) */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.secondary-button,
+.save-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.secondary-button {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.secondary-button:hover,
+.secondary-button:focus-visible {
+  background: #e2e8f0;
+  outline: 2px solid #94a3b8;
+  outline-offset: 2px;
+}
+
+.save-button {
+  background: #10b981;
+  color: white;
+}
+
+.save-button:hover:not(:disabled),
+.save-button:focus-visible:not(:disabled) {
+  background: #059669;
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background: inherit;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .edit-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .edit-header-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .back-button {
+    justify-content: center;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .photo-upload-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo-upload-buttons {
+    justify-content: center;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .secondary-button,
+  .save-button {
+    justify-content: center;
+  }
+
+  .profile-preview,
+  .photo-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Print styles (optional) */
+@media print {
+  .edit-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .back-button,
+  .form-actions,
+  .photo-upload-buttons {
+    display: none;
+  }
+  .edit-header-actions {
+    border-bottom: none;
+  }
+}

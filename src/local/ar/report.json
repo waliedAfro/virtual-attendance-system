@@ -1,0 +1,150 @@
+{
+  "attendanceReport": {
+    "title": "تقرير حضور الموارد البشرية",
+    "subtitle": "ملخص تسجيل الدخول / الخروج اليومي لكل موظف",
+    "exportCsv": "تصدير CSV",
+    "exportPdf": "PDF",
+    "stats": {
+      "totalEmployees": "إجمالي الموظفين",
+      "completeRate": "معدل الاكتمال",
+      "avgWorkingHours": "معدل ساعات العمل"
+    },
+    "filters": {
+      "searchPlaceholder": "البحث باسم الموظف...",
+      "allDepartments": "جميع الأقسام",
+      "clearFilters": "مسح الفلاتر",
+      "dateRangeSeparator": "—"
+    },
+    "summary": "عرض {{total}} من سجلات أيام الموظفين",
+    "table": {
+      "employee": "الموظف",
+      "department": "القسم",
+      "date": "التاريخ",
+      "checkIn": "تسجيل الدخول",
+      "checkOut": "تسجيل الخروج",
+      "status": "الحالة",
+      "workingHours": "ساعات العمل"
+    },
+    "noData": "لم يتم العثور على سجلات",
+    "loading": "جاري التحميل...",
+    "pagination": {
+      "first": "الأولى",
+      "previous": "السابقة",
+      "next": "التالية",
+      "last": "الأخيرة",
+      "pageInfo": "صفحة {{current}} من {{total}}",
+      "show": "عرض",
+      "entries": "سجلات"
+    },
+    "modal": {
+      "noImage": "لا توجد صورة"
+    },
+    "notifications": {
+      "error": "حدث خطأ ما",
+      "loadFailed": "فشل تحميل التقرير"
+    }
+  },
+  "dailyAttendanceReport": {
+    "title": "تقرير الحضور",
+    "subtitle": "مراقبة نشاط السجلات الذكية (SmartLogs)",
+    "exportData": "تصدير البيانات",
+    "stats": {
+      "activeUsers": "المستخدمون النشطون",
+      "onTime": "في الوقت المحدد",
+      "avgLate": "معدل التأخير"
+    },
+    "filters": {
+      "searchPlaceholder": "البحث باسم الموظف...",
+      "allDepartments": " --- تحديد جميع الأقسام --- ",
+      "allDevices": " --- تحديد جميع الأجهزة --- ",
+      "searchButton": "بحث"
+    },
+    "table": {
+      "employee": "الموظف",
+      "department": "القسم",
+      "date": "التاريخ",
+      "checkIn": "تسجيل الدخول",
+      "time": "الوقت",
+      "status": "الحالة",
+      "result": "النتيجة",
+      "deviceLocation": "الجهاز / الموقع",
+      "image": "الصورة"
+    },
+    "noData": "لم يتم العثور على سجلات مطابقة",
+    "pagination": {
+      "first": "الأولى",
+      "previous": "السابقة",
+      "next": "التالية",
+      "last": "الأخيرة",
+      "pageInfo": "صفحة {{current}} من {{total}}",
+      "show": "عرض",
+      "entries": "سجلات"
+    },
+    "imageTrigger": {
+      "show": "عرض الصورة",
+      "loading": "جاري التحميل..."
+    },
+    "modal": {
+      "noImage": "لا توجد صورة لعرضها"
+    },
+    "notifications": {
+      "invalidDateRange": "النطاق الزمني المحدد طويل جداً أو غير صالح.",
+      "invalidPageSize": "حجم الصفحة المطلوب غير مسموح به.",
+      "unauthorized": "ليس لديك الصلاحية لإجراء هذا الإجراء.",
+      "unexpected": "حدث خطأ غير متوقع."
+    }
+  },
+  "detailAttendanceReport": {
+    "title": "تقرير الحضور",
+    "subtitle": "حركات تسجيل الدخول / الخروج مع فلاتر متقدمة",
+    "exportCsv": "تصدير CSV",
+    "stats": {
+      "totalEmployees": "إجمالي الموظفين",
+      "onTimeRate": "معدل الالتزام بالوقت",
+      "avgLateMin": "معدل التأخير (بالدقائق)"
+    },
+    "filters": {
+      "searchPlaceholder": "البحث باسم الموظف...",
+      "allDepartments": " --- تحديد جميع الأقسام --- ",
+      "allDevices": " --- تحديد جميع الأجهزة --- ",
+      "allEvents": "جميع الحركات",
+      "checkInOnly": "تسجيل الدخول فقط",
+      "checkOutOnly": "تسجيل الخروج فقط",
+      "clearFilters": "مسح الفلاتر"
+    },
+    "summary": "عرض {{total}} من الحركات",
+    "table": {
+      "employee": "الموظف",
+      "department": "القسم",
+      "deviceLocation": "الجهاز / الموقع",
+      "date": "التاريخ",
+      "eventType": "نوع الحركة",
+      "time": "الوقت",
+      "status": "الحالة",
+      "image": "الصورة"
+    },
+    "noData": "لا توجد حركات تطابق الفلاتر المحددة",
+    "pagination": {
+      "first": "الأولى",
+      "previous": "السابقة",
+      "next": "التالية",
+      "last": "الأخيرة",
+      "pageInfo": "صفحة {{current}} من {{total}}",
+      "show": "عرض",
+      "entries": "سجلات"
+    },
+    "imageTrigger": {
+      "show": "عرض الصورة",
+      "loading": "جاري التحميل..."
+    },
+    "modal": {
+      "noImage": "لا توجد صورة لعرضها"
+    },
+    "notifications": {
+      "invalidDateRange": "النطاق الزمني المحدد طويل جداً أو غير صالح.",
+      "invalidPageSize": "حجم الصفحة المطلوب غير مسموح به.",
+      "unauthorized": "ليس لديك الصلاحية لإجراء هذا الإجراء.",
+      "unexpected": "حدث خطأ غير متوقع."
+    }
+  }
+}

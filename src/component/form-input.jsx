@@ -10,6 +10,9 @@ const FormInput = ({
   placeholder = "",
   className = "",
   readOnly = false,
+  error = "",
+  onBlur,
+  disabled = false,
 }) => {
   return (
     <div className={className}>
@@ -24,6 +27,9 @@ const FormInput = ({
         required={required}
         placeholder={placeholder}
         readOnly={readOnly}
+        error={error}
+        onBlur={onBlur}
+        disabled={disabled}
       />
     </div>
   );

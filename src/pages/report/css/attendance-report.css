@@ -1,0 +1,136 @@
+/* Add to attendance-report.css */
+.filtersBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  background: var(--card-bg);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  border: 1px solid var(--gray-200);
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid var(--gray-300);
+  border-radius: 40px;
+  padding: 0 0.75rem;
+  transition: var(--transition);
+}
+
+.filterGroup:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.filterIcon {
+  color: var(--gray-500);
+}
+
+.filterInput, .filterSelect {
+  border: none;
+  padding: 0.6rem 0;
+  font-size: 0.9rem;
+  background: transparent;
+  outline: none;
+  color: var(--gray-800);
+}
+
+.filterSelect {
+  cursor: pointer;
+  padding-right: 1.5rem;
+}
+
+.dateRange {
+  gap: 0.25rem;
+}
+
+.dateInput {
+  width: 130px;
+}
+
+.dateSeparator {
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.clearFiltersBtn {
+  background: none;
+  border: 1px solid var(--gray-300);
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--gray-700);
+}
+
+.clearFiltersBtn:hover {
+  background: var(--gray-100);
+  border-color: var(--gray-400);
+}
+
+.resultsSummary {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .filtersBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filterGroup, .filterSelect, .dateInput {
+    width: 100%;
+  }
+  .dateRange {
+    flex-wrap: wrap;
+  }
+}
+
+/* Time filter groups */
+.timeRange {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid var(--gray-300);
+  border-radius: 40px;
+  padding: 0 0.75rem;
+}
+
+.timeInput {
+  width: 100px;
+  border: none;
+  padding: 0.6rem 0;
+  font-size: 0.85rem;
+  background: transparent;
+  outline: none;
+}
+
+.timeLabel {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-left: 0.25rem;
+}
+
+/* Adjust filter bar responsiveness */
+@media (max-width: 1024px) {
+  .filtersBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filterGroup, .timeRange, .dateRange {
+    width: 100%;
+  }
+  .timeInput {
+    width: auto;
+    flex: 1;
+  }
+}

@@ -1,0 +1,39 @@
+/* SearchBox.css */
+.search-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+}
+
+.search-box .form-control {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search-box .form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.search-box .search-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  pointer-events: none;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .search-box {
+    max-width: 100%;
+  }
+}

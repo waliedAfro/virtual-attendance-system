@@ -1,0 +1,69 @@
+/* src/pages/security/rbac/css/recentChanges.css */
+.recent-changes {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: var(--spacing);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.recent-changes h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.change-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.change-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+}
+
+.change-item:last-child {
+    border-bottom: none;
+}
+
+.change-action {
+    color: var(--text-primary);
+}
+
+.change-action::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.change-item.update .change-action::before {
+    background: var(--primary);
+}
+
+.change-item.create .change-action::before {
+    background: var(--success);
+}
+
+.change-item.add .change-action::before {
+    background: var(--warning);
+}
+
+.change-item.clone .change-action::before {
+    background: #7c4dff;
+}
+
+.change-time {
+    color: var(--text-secondary);
+    font-size: 12px;
+    white-space: nowrap;
+}

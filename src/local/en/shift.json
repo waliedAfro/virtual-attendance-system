@@ -1,0 +1,189 @@
+{
+  "shiftAssignment": {
+    "common": {
+      "labels": {
+        "user": "User",
+        "userId": "User ID",
+        "shift": "Shift",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "endDateOptional": "End Date (optional)",
+        "active": "Active",
+        "activeOnly": "Active only",
+        "fullName": "Full Name",
+        "email": "Email",
+        "role": "Role",
+        "department": "Department",
+        "status": "Status",
+        "code": "Code",
+        "mobile": "Mobile",
+        "employeeNo": "Employee No",
+        "sn": "S/N",
+        "actions": "Actions",
+        "loading": "Loading...",
+        "selectShift": "Select a shift"
+      },
+      "buttons": {
+        "select": "Select",
+        "search": "Search",
+        "reset": "Reset",
+        "edit": "Edit",
+        "create": "Create",
+        "update": "Update",
+        "backToSearch": "← Back to Search",
+        "close": "×",
+        "cancel": "Cancel"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "notifications": {
+        "successCreate": "Shift Assigned successfully!",
+        "successUpdate": "Assignment updated successfully!",
+        "errShiftAssignNotFound": "Requested Shift assign Not found!",
+        "errAlreadyHasActive": "User Already has an Active Shift assign!",
+        "errAlreadyExistsOnDate": "Shift assignment already exists for this user on the given start date!",
+        "errStartDatePast": "Start date cannot be in Past!",
+        "errEndDateComparison": "End date must be greater than or equal to start date!",
+        "errEndDatePast": "End Date cannot be in the past!",
+        "errGenericCreate": "Failed to create assignment",
+        "errGenericUpdate": "Update failed",
+        "errLoadShifts": "Could not load shifts. Please refresh.",
+        "errLoadAssignment": "Failed to load assignment details."
+      },
+      "validation": {
+        "userRequired": "User is required",
+        "shiftRequired": "Shift is required",
+        "startDateRequired": "Start date is required",
+        "endDateBeforeStart": "End date cannot be before start date"
+      }
+    },
+    "create": {
+      "title": "Create New Shift Assignment",
+      "loadingShifts": "Loading shifts...",
+      "placeholderSelectUser": "Click to select a user",
+      "selectedUserDetailsTitle": "Selected User Details",
+      "btnCreating": "Creating...",
+      "btnCreate": "Create Assignment",
+      "confirmTitle": "Confirm To Assign Shift to Employee ",
+      "confirmText": "Are you sure want to Assign Shift to \"{{name}}\"?"
+    },
+    "search": {
+      "title": "Shift Assignments",
+      "btnNewAssignment": "+ New Assignment",
+      "placeholderUserId": "Enter user ID",
+      "allShifts": "All Shifts",
+      "loadingAssignments": "Loading assignments...",
+      "noAssignmentsFound": "No assignments found.",
+      "pagination": {
+        "first": "First",
+        "previous": "Previous",
+        "next": "Next",
+        "last": "Last",
+        "pageInfo": "Page {{current}} of {{total}}",
+        "show": "Show",
+        "entries": "entries"
+      }
+    },
+    "update": {
+      "title": "Edit Shift Assignment",
+      "loadingAssignment": "Loading assignment...",
+      "userDetailsTitle": "User Details",
+      "confirmTitle": "Confirm update Assign Shift to Employee ",
+      "confirmText": "Are you sure want to update Assign Shift to \"{{name}}\"?",
+      "btnUpdate": "Update Assignment",
+      "btnUpdating": "Updating..."
+    },
+    "userModal": {
+      "title": "Select User",
+      "placeholderSearch": "Search by name or email...",
+      "loadingUsers": "Loading users...",
+      "noUsersFound": "No users found",
+      "paginationInfo": "Showing {{start}} – {{end}} of {{total}} users"
+    }
+  },
+  "shiftManagement": {
+    "form": {
+      "titleAdd": "Add New Shift",
+      "titleEdit": "Edit Shift",
+      "loadingData": "Loading shift data...",
+      "types": {
+        "morning": "Morning",
+        "evening": "Evening",
+        "night": "Night",
+        "general": "General",
+        "flexible": "Flexible",
+        "rotational": "Rotational"
+      },
+      "labels": {
+        "shiftName": "Shift Name",
+        "shiftType": "Shift Type",
+        "startTime": "Start Time",
+        "endTime": "End Time",
+        "gracePeriod": "Grace Period (minutes)",
+        "break": "Break (minutes)",
+        "allowOvertime": "Allow Overtime",
+        "maxOvertime": "Max Overtime (minutes)",
+        "flexibleStartEnd": "Flexible Start / End",
+        "earlyCheckin": "Early Check-in (minutes)",
+        "lateCheckout": "Late Checkout (minutes)"
+      },
+      "previews": {
+        "crossesMidnight": "Crosses Midnight:",
+        "workingMinutes": "Working Minutes (after break):",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "buttons": {
+        "back": "← Back to Shifts",
+        "cancel": "Cancel",
+        "addShift": "Add Shift",
+        "updateShift": "Update Shift",
+        "adding": "Adding...",
+        "updating": "Updating..."
+      },
+      "notifications": {
+        "successCreate": "Shift added successfully!",
+        "successUpdate": "Shift updated successfully!",
+        "errLoadDetails": "Failed to load shift details",
+        "errFetchGeneric": "Failed to load shift",
+        "errCreate": "Failed to add shift",
+        "errUpdate": "Failed to update shift"
+      },
+      "validation": {
+        "nameRequired": "Shift name is required",
+        "startRequired": "Start time is required",
+        "endRequired": "End time is required",
+        "invalidDuration": "Shift duration minus break must be greater than 0 minutes",
+        "graceNegative": "Grace period cannot be negative",
+        "breakNegative": "Break minutes cannot be negative",
+        "overtimeRequired": "Valid max overtime minutes required",
+        "earlyCheckinRequired": "Valid early check-in minutes required",
+        "lateCheckoutRequired": "Valid late checkout minutes required"
+      }
+    },
+    "list": {
+      "title": "Shift Management",
+      "searchTitle": "Search Shifts",
+      "listTitle": "Shift List",
+      "allTypes": "All Types",
+      "placeholderName": "Search by name...",
+      "btnNewShift": "+ Add New Shift",
+      "noShiftsFound": "No shifts found. Try adjusting search or add a new shift.",
+      "table": {
+        "name": "Name",
+        "type": "Type",
+        "start": "Start",
+        "end": "End",
+        "crossDay": "Cross Day",
+        "working": "Working (min)",
+        "grace": "Grace",
+        "break": "Break",
+        "overtime": "Overtime",
+        "flexible": "Flexible",
+        "actions": "Actions"
+      }
+    }
+  }
+}

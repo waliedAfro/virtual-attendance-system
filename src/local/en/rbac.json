@@ -1,0 +1,111 @@
+{
+  "rbac": {
+     "common" :{
+    "remove": "حذف",
+    "edit": "تحديث" ,
+    "loading" : "جاري التحميل ... " ,
+    "delete" : "ازالة"
+  } ,
+    "dashboard": {
+      "title": "RBAC Dashboard",
+      "subtitle": "Overview of roles, permissions, and templates",
+      "totalRoles": "Total Roles",
+      "totalPermissions": "Total Permissions",
+      "totalTemplates": "Total Templates",
+      "recentRoles": "Recent Roles",
+      "recentTemplates": "Recent Templates"
+    },
+    "roles": {
+      "title": "Roles",
+      "subtitle": "Manage roles and their permissions",
+      "createNew": "Create Role",
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "permissions": "Permissions",
+      "search": "Search roles...",
+      "deleteConfirmTitle": "Delete Role",
+      "deleteConfirmMessage": "Are you sure you want to delete this role?",
+      "clone": "Clone Role",
+      "cloneTitle": "Clone {{name}}",
+      "cloneConfirmMessage": "This will create a duplicate of the role with all permissions."
+    },
+    "templates": {
+      "title": "Role Templates",
+      "subtitle": "Pre-defined permission sets for roles",
+      "createNew": "Create Template",
+      "permissionsFor": "Permissions for {{name}}",
+      "deleteConfirmTitle": "Delete Template",
+      "deleteConfirmMessage": "Are you sure you want to delete this template?"
+    },
+    "permissions": {
+      "title": "Permissions",
+      "subtitle": "View all permissions and their hierarchy",
+      "treeView": "Tree View",
+      "matrixView": "Matrix View"
+    },
+    "permissionGroups": {
+      "title": "Permission Groups",
+      "subtitle": "Manage your permission groups",
+      "createNew": "Create New Group",
+      "createGroup": "Create Group",
+      "editGroup": "Edit Group",
+      "groupCode": "Code",
+      "groupName": "Name",
+      "groupNameAr": "Name (Arabic)",
+      "module": "Module",
+      "moduleAr": "Module (Arabic)",
+      "icon": "Icon",
+      "displayOrder": "Display Order",
+      "description": "Description",
+      "color": "Color",
+      "actions": "Actions",
+      "confirmDelete": "Are you sure you want to delete this group?",
+      "listTitle": "Groups List",
+      "noGroups": "No groups found",
+      "create": "Create",
+      "update": "Update",
+      "cancel": "Cancel",
+      "active" : "Active" ,
+      "permissions" : "Permissions" ,
+
+    "groupIdentity": "Group Identity",
+    "moduleSettings": "Module & Aesthetics",
+    "definePermissions": "Define Associated Permissions",
+    "addPermissionRow": "Add Permission Row",
+    "permissionCode": "Permission Code",
+    "permissionName": "Name (EN)",
+    "permissionNameAr": "Name (AR)",
+    "permissionModule": "Module",
+    "permissionOrder": "Order",
+    "permissionDescription": "Permission Description",
+    "addToList": "Add to List",
+    "noPermissionsAdded": "No permissions added to this group yet.",
+    "permissionCodeRequired": "Permission Code is required.",
+    "requiredGroupCode": "Group Code is required.",
+    "maxLength50": "Max length is 50 characters.",
+    "requiredGroupName": "Group Name is required.",
+    "maxLength100": "Max length is 100 characters.",
+    "requiredGroupNameAr": "Arabic Group Name is required.",
+    "requiredDisplayOrder": "Display Order is required.",
+    "maxLength500": "Max length is 500 characters.",
+    "fixErrors": "Please fix validation errors before submitting.",
+    "saveError": "Error saving group. Please try again."
+
+      
+    },
+    "userAssignments": {
+      "title": "User Role Assignments",
+      "subtitle": "Assign roles to users"
+    }
+  },
+  "common": {
+    "actions": "Actions",
+    "view": "View",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "search": "Search"
+  }
+}

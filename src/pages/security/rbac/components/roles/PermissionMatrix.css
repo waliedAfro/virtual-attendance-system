@@ -1,0 +1,126 @@
+/* PermissionMatrix.css */
+.permission-matrix-container {
+  padding: 0.5rem 0;
+  overflow-x: auto;
+}
+
+.permission-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.permission-matrix-table th,
+.permission-matrix-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.permission-matrix-table thead th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.permission-matrix-table .resource-header {
+  text-align: left;
+  min-width: 150px;
+}
+
+.permission-matrix-table .action-header {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  min-width: 60px;
+}
+
+.permission-matrix-table .resource-cell {
+  text-align: left;
+  font-weight: 500;
+  color: #212529;
+}
+
+.permission-matrix-table .resource-name {
+  display: inline-block;
+  padding: 0.1rem 0.3rem;
+  background-color: #e9ecef;
+  border-radius: 0.2rem;
+  font-size: 0.85rem;
+}
+
+.permission-matrix-table .action-cell {
+  text-align: center;
+}
+
+.permission-matrix-table .permission-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.permission-matrix-table .badge.bg-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.permission-matrix-table .badge.bg-light {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.permission-matrix-table tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* Loading and empty states */
+.permission-matrix-loading,
+.permission-matrix-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .permission-matrix-table {
+    font-size: 0.8rem;
+  }
+  .permission-matrix-table th,
+  .permission-matrix-table td {
+    padding: 0.3rem 0.5rem;
+  }
+  .permission-matrix-table .resource-header {
+    min-width: 100px;
+  }
+  .permission-matrix-table .action-header {
+    min-width: 40px;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .permission-matrix-table .resource-header {
+    min-width: 80px;
+  }
+  .permission-matrix-table .action-header {
+    min-width: 30px;
+    font-size: 0.6rem;
+  }
+  .permission-matrix-table .permission-badge {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
+}

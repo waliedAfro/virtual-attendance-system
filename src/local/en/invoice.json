@@ -1,0 +1,65 @@
+{
+  "invoiceManagement": {
+    "title": "My Invoices",
+    "subtitle": "View history and settle outstanding balances",
+    "tenantPortal": "Portal",
+    "downloadStatement": "Download Statement",
+    "autopaySettings": "Autopay Settings",
+    "totalOutstanding": "Total Outstanding",
+    "paidYearToDate": "Paid (Year-to-date)",
+    "nextDueDate": "Next Due Date",
+    "noUpcomingPayments": "No upcoming payments",
+    "searchPlaceholder": "Search by invoice number...",
+    "filterAll": "All",
+    "filterPaid": "Paid",
+    "filterOpen": "Open",
+    "filterOverdue": "Overdue",
+    "tableHeaders": {
+      "invoiceRef": "Invoice Ref",
+      "customer": "Customer",
+      "issueDate": "Issue Date",
+      "amount": "Amount",
+      "status": "Status"
+    },
+    "viewDetails": "View Details",
+    "payNow": "Pay Now",
+    "noInvoicesFound": "No invoices found matching your criteria.",
+    "loading": "Loading...",
+    "statuses": {
+      "PAID": "Paid",
+      "OPEN": "Open",
+      "OVERDUE": "Overdue"
+    }
+  },
+  "invoiceDetail": {
+    "backToInvoices": "Back to Invoices",
+    "print": "Print",
+    "downloadPDF": "Download PDF",
+    "officialInvoice": "OFFICIAL INVOICE",
+    "billTo": "Bill To",
+    "paymentStatus": "Payment Status",
+    "due": "Due:",
+    "subscriptionPeriod": "Subscription Period",
+    "serviceDescription": "Service Description",
+    "total": "Total",
+    "serviceFee": "Service Fee",
+    "subtotal": "Subtotal",
+    "amountDue": "Amount Due",
+    "payNow": "Pay Now",
+    "processing": "Processing...",
+    "loadingInvoice": "Loading Invoice...",
+    "invoiceNotFound": "Invoice not found.",
+    "noCheckoutUrl": "No checkout URL returned",
+    "failedToLoadServices": "Failed to load services",
+    "statuses": {
+      "PAID": "Paid",
+      "OPEN": "Open",
+      "OVERDUE": "Overdue",
+      "PENDING": "Pending",
+      "VOID": "Void"
+    }
+  },
+  "common": {
+    "noData": "—"
+  }
+}

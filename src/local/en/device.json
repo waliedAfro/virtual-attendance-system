@@ -1,0 +1,218 @@
+{
+  "addDevice": {
+    "title": "Add device",
+    "deviceNameLabel": "Device Name",
+    "deviceNamePlaceholder": "Device Name (e.g., Main Entrance North)",
+    "deviceTypeLabel": "Device Type",
+    "deviceTypeSelectDefault": "-- Select Device Type --",
+    "deviceTypeOptions": {
+      "qr": "QR Code TERMINAL",
+      "vr": "VR Virtual Reality TERMINAL",
+      "ips": "IPS TERMINAL"
+    },
+    "locationLabel": "Location",
+    "locationLoading": "Loading locations...",
+    "locationSelectDefault": "-- Select Location--",
+    "latitudeLabel": "Latitude",
+    "latitudePlaceholder": "Latitude (e.g., 24.7136)",
+    "longitudeLabel": "Longitude",
+    "longitudePlaceholder": "Longitude (e.g., 46.6753)",
+    "altitudeLabel": "Altitude",
+    "altitudePlaceholder": "Altitude (meters) (e.g., 600)",
+    "accuracyLabel": "Accuracy",
+    "accuracyPlaceholder": "Accuracy (± meters)(e.g., 15)",
+    "radiusLabel": "Geofence Radius (meters)",
+    "radiusPlaceholder": "Geofence Radius (meters)(e.g., 100)",
+    "floorLevelLabel": "Floor Level",
+    "floorLevelPlaceholder": "Floor Level (e.g., Ground Floor, Level 1)",
+    "addButton": "Add Device",
+    "addingButton": "Adding Device...",
+    "resetButton": "Reset",
+    "errors": {
+      "deviceNameRequired": "Device name is required",
+      "latitudeRequired": "Latitude is required",
+      "longitudeRequired": "Longitude is required",
+      "altitudeRequired": "Altitude is required",
+      "altitudeInteger": "Altitude must be an integer number",
+      "altitudePositive": "Altitude must be greater than 0",
+      "accuracyRequired": "Accuracy is required",
+      "accuracyInteger": "Accuracy must be an integer number",
+      "accuracyPositive": "Accuracy must be greater than 0",
+      "radiusRequired": "Radius Meter is required",
+      "locationRequired": "Location is required",
+      "deviceTypeRequired": "DeviceType is required"
+    },
+    "swal": {
+      "title": "Are you sure?",
+      "text": "You are about to Submit New Device.",
+      "confirmButton": "Yes, Submit New Device"
+    },
+    "notifications": {
+      "success": "Device created successfully!",
+      "error": "Device created Fail!"
+    }
+  },
+  "editDevice": {
+    "title": "Edit Device",
+    "sections": {
+      "basicInformation": "Basic Information",
+      "locationInformation": "Location Information",
+      "geographicCoordinates": "Geographic Coordinates",
+      "geofenceSettings": "Geofence Settings",
+      "technicalDetails": "Technical Details",
+      "description": "Description"
+    },
+    "deviceNameLabel": "Device Name",
+    "deviceCodeLabel": "Device Code:",
+    "statusLabel": "Status",
+    "statusOptions": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "retired": "Retired"
+    },
+    "deviceTypeLabel": "Device Type:",
+    "locationLabel": "Location",
+    "locationSelectDefault": "Select Location",
+    "floorLevelLabel": "Floor Level",
+    "buildingLabel": "Building/Site",
+    "latitudeLabel": "Latitude :",
+    "longitudeLabel": "Longitude :",
+    "altitudeLabel": "Altitude (meters) :",
+    "radiusLabel": "Geofence Radius (meters)",
+    "accuracyLabel": "Accuracy (± meters)",
+    "manufacturerLabel": "Manufacturer",
+    "modelLabel": "Model",
+    "firmwareLabel": "Firmware Version",
+    "descriptionPlaceholder": "Enter device description...",
+    "cancelButton": "Cancel",
+    "saveButton": "Save Changes",
+    "savingButton": "Saving...",
+    "errors": {
+      "deviceNameRequired": "Device name is required",
+      "deviceCodeRequired": "Device code is required",
+      "statusRequired": "Status is required",
+      "latitudeRange": "Latitude must be between -90 and 90",
+      "longitudeRange": "Longitude must be between -180 and 180",
+      "radiusPositive": "Radius must be a positive number",
+      "accuracyPositive": "Accuracy must be a positive number"
+    },
+    "swal": {
+      "title": "Are you sure to Update ?",
+      "text": "You are about to Update this Device.",
+      "confirmButton": "Yes, assign"
+    },
+    "toast": {
+      "updating": "Updating...",
+      "success": "User assigned successfully",
+      "failed": "Failed to update device."
+    }
+  },
+  "mapViewModal": {
+    "title": "Device Location",
+    "fullscreenTooltip": "Fullscreen",
+    "exitFullscreenTooltip": "Exit Fullscreen",
+    "noCoords": {
+      "title": "No Coordinates Available",
+      "message1": "This device does not have valid location coordinates.",
+      "message2": "Please update the device information with valid latitude and longitude values."
+    },
+    "coordinates": {
+      "latitude": "Latitude:",
+      "longitude": "Longitude:"
+    },
+    "copyTooltip": "Copy coordinates",
+    "providers": {
+      "google": "Google Maps",
+      "osm": "OpenStreetMap"
+    },
+    "getDirections": "Get Directions",
+    "loadingMap": "Loading map...",
+    "mapError": "Failed to load map. Please check your internet connection.",
+    "retryButton": "Retry",
+    "locationDetails": {
+      "title": "Location Details",
+      "deviceLabel": "Device:",
+      "codeLabel": "Code:",
+      "addressLabel": "Address:",
+      "accuracyLabel": "Accuracy:",
+      "noAddress": "No address available",
+      "unknown": "Unknown"
+    },
+    "openInMaps": "Open in Maps",
+    "copyCoordinates": "Copy Coordinates",
+    "closeButton": "Close",
+    "openNewTab": "Open in New Tab"
+  },
+  "searchDevice": {
+    "title": "Search Devices",
+    "searchPlaceholder": "Search by device name, code, or location...",
+    "searchButton": "Search",
+    "searchingButton": "Searching...",
+    "resultsHeading": "Search Results ({{count}})",
+    "card": {
+      "deviceCode": "Device Code:",
+      "location": "Location:",
+      "floorLevel": "Floor Level:",
+      "coordinates": "Coordinates:",
+      "altitude": "Altitude:",
+      "accuracy": "Accuracy:",
+      "radius": "Geofence Radius:",
+      "statusUnknown": "Unknown"
+    },
+    "viewDetails": "View Details",
+    "edit": "Edit",
+    "generateQR": "Generate New QR",
+    "noResults": "No Device found matching your criteria.",
+    "addNew": "+ Add New Device",
+    "loadError": "Failed to load Locations ."
+  },
+  "viewDeviceQR": {
+    "title": "Device QR Code",
+    "loading": "Generating secure token...",
+    "deviceNameLabel": "Device Name:",
+    "tokenLabel": "Token:",
+    "footer": "Scan this QR Code to Register Your Attendance .",
+    "downloadSVG": "Download SVG",
+    "print": "Print",
+    "savePDF": "Save as PDF",
+    "errorGenerate": "Failed to generate token. Please try again.",
+    "errorNoToken": "No token generated. Please try again.",
+    "closeButton": "×"
+  },
+  "viewDevice": {
+    "title": "Device Details",
+    "sections": {
+      "basicInformation": "Basic Information",
+      "locationInformation": "Location Information",
+      "geographicCoordinates": "Geographic Coordinates",
+      "geofenceSettings": "Geofence Settings",
+      "additionalInformation": "Additional Information",
+      "timestamps": "Timestamps",
+      "description": "Description"
+    },
+    "deviceName": "Device Name:",
+    "deviceCode": "Device Code:",
+    "status": "Status:",
+    "deviceType": "Device Type:",
+    "location": "Location:",
+    "floorLevel": "Floor Level:",
+    "building": "Building/Site:",
+    "latitude": "Latitude:",
+    "longitude": "Longitude:",
+    "altitude": "Altitude:",
+    "radius": "Geofence Radius:",
+    "accuracy": "Accuracy:",
+    "manufacturer": "Manufacturer:",
+    "model": "Model:",
+    "firmware": "Firmware Version:",
+    "createdAt": "Created Date:",
+    "updatedAt": "Last Updated:",
+    "lastCommunication": "Last Communication:",
+    "unknown": "Unknown",
+    "notAvailable": "N/A",
+    "closeButton": "Close"
+  },
+  "common": {
+    "close": "Close"
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "menu": [
+    {
+      "type": "item",
+      "label": "Home",
+      "path": "home",
+      "icon": "faHome",
+      "translationKey": "menu.home"
+    },
+    {
+      "type": "item",
+      "label": "Dashboard",
+      "path": "dashboard",
+      "icon": "faTachometerAlt",
+      "translationKey": "menu.dashboard"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "key": "company",
+      "label": "Company",
+      "icon": "faBuilding",
+      "translationKey": "menu.company.title",
+      "children": [
+        {
+          "label": "Company Info",
+          "path": "view-company",
+          "icon": "faEye",
+          "translationKey": "menu.company.info"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "key": "subscription",
+      "label": "Subscriptions",
+      "icon": "faCreditCard",
+      "translationKey": "menu.subscription.title",
+      "children": [
+        {
+          "label": "Subscriptions",
+          "path": "subscriptions/manage",
+          "icon": "faDollarSign",
+          "translationKey": "menu.subscription.manage"
+        },
+        {
+          "label": "User Licenses",
+          "path": "subscriptions/licenses",
+          "icon": "faIdCard",
+          "translationKey": "menu.subscription.licenses"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "key": "billing",
+      "label": "Billing",
+      "icon": "faFileInvoiceDollar",
+      "translationKey": "menu.billing.title",
+      "children": [
+        
+        {
+          "label": "Invoices",
+          "path": "invoices",
+          "icon": "faFileInvoice",
+          "translationKey": "menu.billing.invoices"
+        },
+        {
+          "label": "Payments",
+          "path": "payments",
+          "icon": "faMoneyBillWave",
+          "translationKey": "menu.billing.payments"
+        },
+        {
+          "label": "Payment Methods",
+          "path": "payment-methods",
+          "icon": "faCreditCardSolid",
+          "translationKey": "menu.billing.methods"
+        },
+        {
+          "label": "Revenue Reports",
+          "path": "reports/revenue",
+          "icon": "faChartBar",
+          "translationKey": "menu.billing.revenueReports"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "key": "device",
+      "label": "Device",
+      "icon": "faMicrochip",
+      "translationKey": "menu.device.title",
+      "children": [
+        {
+          "label": "Search Device",
+          "path": "search-device",
+          "icon": "faSearch",
+          "translationKey": "menu.device.search"
+        },
+        {
+          "label": "Add Device",
+          "path": "add-device",
+          "icon": "faPlus",
+          "translationKey": "menu.device.add"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "key": "location",
+      "label": "Location",
+      "icon": "faLocationDot",
+      "translationKey": "menu.location.title",
+      "children": [
+        {
+          "label": "Search Location",
+          "path": "search-location",
+          "icon": "faSearch",
+          "translationKey": "menu.location.search"
+        },
+        {
+          "label": "Add Location",
+          "path": "add-location",
+          "icon": "faPlus",
+          "translationKey": "menu.location.add"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "key": "employee",
+      "label": "HR",
+      "icon": "faUsers",
+      "translationKey": "menu.hr.title",
+      "children": [
+        {
+          "label": "Search Employee",
+          "path": "search-employee",
+          "icon": "faSearch",
+          "translationKey": "menu.hr.searchEmployee"
+        },
+        {
+          "label": "Add Employee",
+          "path": "add-employee",
+          "icon": "faUserPlus",
+          "translationKey": "menu.hr.addEmployee"
+        },
+        {
+          "label": "Shift Assignment",
+          "path": "shift-assignment",
+          "icon": "faUserPlus",
+          "translationKey": "menu.hr.shiftAssignment"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "key": "reports",
+      "label": "Reports",
+      "icon": "faChartBar",
+      "translationKey": "menu.reports.title",
+      "children": [
+        {
+          "header": "Attendance",
+          "type": "header",
+          "translationKey": "menu.reports.headers.attendance"
+        },
+        {
+          "label": "Daily Attendance Report",
+          "path": "reports/daily-attendance",
+          "translationKey": "menu.reports.dailyAttendance"
+        },
+        {
+          "label": "Attendance Report",
+          "path": "reports/attendance",
+          "translationKey": "menu.reports.attendance"
+        },
+        {
+          "label": "Absent Report",
+          "path": "reports/absent",
+          "translationKey": "menu.reports.absent"
+        },
+        {
+          "label": "Details Report",
+          "path": "reports/details",
+          "translationKey": "menu.reports.details"
+        },
+        {
+          "header": "Financial",
+          "type": "header",
+          "translationKey": "menu.reports.headers.financial"
+        },
+        {
+          "label": "Revenue Report",
+          "path": "reports/revenue",
+          "translationKey": "menu.reports.revenue"
+        },
+        {
+          "label": "Invoice Report",
+          "path": "reports/invoice",
+          "translationKey": "menu.reports.invoice"
+        },
+        {
+          "label": "Payment Report",
+          "path": "reports/payment",
+          "translationKey": "menu.reports.payment"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "key": "settings",
+      "label": "Settings",
+      "icon": "faCog",
+      "translationKey": "menu.settings.title",
+      "children": [
+        {
+          "header": "General",
+          "type": "header",
+          "translationKey": "menu.settings.headers.general"
+        },
+        {
+          "label": "Shift Management",
+          "path": "settings/shift",
+          "translationKey": "menu.settings.shiftManagement"
+        },
+        {
+          "label": "Department Management",
+          "path": "settings/department",
+          "translationKey": "menu.settings.departmentManagement"
+        },
+        {
+          "label": "Edit User",
+          "path": "settings/edit-user",
+          "translationKey": "menu.settings.editUser"
+        },
+        {
+          "label": "Roles & Permissions",
+          "path": "access/roles",
+          "translationKey": "menu.settings.rolesPermissions"
+        },
+        {
+          "label": "User & Assign",
+          "path": "access/user-assign",
+          "translationKey": "menu.settings.userAssign"
+        },
+        {
+          "header": "Billing Settings",
+          "type": "header",
+          "translationKey": "menu.settings.headers.billing"
+        },
+        {
+          "label": "Tax Rates",
+          "path": "settings/tax-rates",
+          "translationKey": "menu.settings.taxRates"
+        },
+        {
+          "label": "Payment Terms",
+          "path": "settings/payment-terms",
+          "translationKey": "menu.settings.paymentTerms"
+        },
+        {
+          "label": "Currency Settings",
+          "path": "settings/currency",
+          "translationKey": "menu.settings.currencySettings"
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "label": "Help",
+      "path": "help",
+      "icon": "faQuestionCircle",
+      "translationKey": "menu.help"
+    }
+  ]
+}

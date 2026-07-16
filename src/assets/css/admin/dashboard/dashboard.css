@@ -1,0 +1,279 @@
+.dashboard {
+  padding: 24px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.dashboard-header {
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+}
+
+.dashboard-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.dashboard-icon {
+  font-size: 32px !important;
+}
+
+.user-avatar {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* Time Filter */
+.time-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+/* Stats Cards */
+.stat-card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.stat-icon {
+  width: 56px !important;
+  height: 56px !important;
+  font-size: 24px !important;
+}
+
+.trend-up {
+  color: #4caf50;
+  margin-right: 4px;
+}
+
+.trend-down {
+  color: #f44336;
+  margin-right: 4px;
+}
+
+.trend-text.up {
+  color: #4caf50;
+}
+
+.trend-text.down {
+  color: #f44336;
+}
+
+/* Charts */
+.chart-card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  height: 100%;
+}
+
+/* Quick Stats */
+.stats-list-card,
+.activities-card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  height: 100%;
+}
+
+.quick-stat-paper {
+  padding: 16px;
+  border-radius: 8px !important;
+  background: #f8f9fa !important;
+  transition: background 0.3s ease;
+}
+
+.quick-stat-paper:hover {
+  background: #e9ecef !important;
+}
+
+.quick-stat-icon {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+/* Performance Bar */
+.performance-bar {
+  height: 8px !important;
+  border-radius: 4px !important;
+}
+
+.performance-bar > div {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* Activities */
+.activities-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: #f8f9fa;
+  transition: background 0.3s ease;
+}
+
+.activity-item:hover {
+  background: #e9ecef;
+}
+
+.activity-avatar {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.activity-chip {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%) !important;
+}
+
+/* System Status */
+.system-status-card {
+  margin-top: 24px;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.status-item {
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.status-icon {
+  font-size: 48px !important;
+  margin-bottom: 8px;
+}
+
+.status-ok {
+  color: #4caf50 !important;
+}
+
+.status-warning {
+  color: #ff9800 !important;
+}
+
+.status-error {
+  color: #f44336 !important;
+}
+
+/* Floating Action Button */
+.fab-button {
+  position: fixed !important;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* Alert */
+.dashboard-alert {
+  margin-top: 24px;
+  border-radius: 12px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+  .dashboard {
+    padding: 16px;
+  }
+
+  .dashboard-header {
+    padding: 16px;
+  }
+
+  .time-filter {
+    flex-wrap: wrap;
+  }
+
+  .stats-grid,
+  .charts-grid,
+  .bottom-grid {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-title {
+    font-size: 1.5rem !important;
+  }
+
+  .stat-card .MuiTypography-h4 {
+    font-size: 1.5rem !important;
+  }
+
+  .time-filter button {
+    font-size: 0.75rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-card,
+.chart-card,
+.stats-list-card,
+.activities-card,
+.system-status-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Custom Scrollbar */
+.activities-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.activities-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.activities-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.activities-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

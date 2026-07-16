@@ -1,0 +1,30 @@
+{
+  "home": {
+    "title": "Welcome to SmartLogs Dashboard",
+    "buttons": {
+      "refresh": "Refresh Data",
+      "refreshing": "Refreshing...",
+      "logout": "Logout",
+      "retry": "Retry"
+    }
+  },
+  "dashboard": {
+    "currentMonthOverview": "Current Month Overview",
+    "cards": {
+      "activeEmployees": "Active Employees",
+      "totalCheckIns": "Total Check-ins",
+      "onTimeCheckIns": "On-Time Check-ins",
+      "onTimePercentage": "On-Time Percentage",
+      "averageLateMinutes": "Average Late Minutes"
+    },
+    "emptyState": "No data available for this month."
+  },
+  "status": {
+    "loadingDashboard": "Loading dashboard...",
+    "errorLoading": "Failed to load dashboard data. Please try again."
+  },
+  "formats": {
+    "percentSuffix": "%",
+    "minutesSuffix": "min"
+  }
+}

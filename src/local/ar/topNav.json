@@ -1,0 +1,22 @@
+{
+    "mainNavigation": "القائمة الرئيسية",
+    "toggleMenu": "تبديل القائمة",
+    "appName": "Smart Logs  سمارت لوجس",
+    "welcome": "مرحباً",
+    "guest": "ضيف",
+    "user": "مستخدم",
+    "avatar" : "صورة",
+    "userAvatar" : "صورة المستخدم",
+    "userMenu" : "قائمة المستخدم",
+    "language" : "اللغة",
+    "languageSelection" : "اختيار اللغة",
+    "english" : "الإنجليزية",
+    "arabic" : "العربية (Arabic)",
+    "selected":"تم اختيار" ,
+    "changePassword":"تغيير كلمة المرور", 
+    "logout":"خروج",
+    "confirmLogout":"هل أنت متأكد من رغبتك في تسجيل الخروج؟",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء"
+
+}

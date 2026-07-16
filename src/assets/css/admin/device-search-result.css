@@ -1,0 +1,691 @@
+/* ==============================================
+   DEVICE SEARCH RESULTS COMPONENT
+   ============================================== */
+
+/* ===== RESULTS CONTAINER ===== */
+.device-search-results {
+    margin-top: 1.5rem;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* ===== TABLE CONTAINERS ===== */
+  .devices-table-container {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* ===== TABLE STRUCTURE ===== */
+  .devices-table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.875rem;
+  }
+  
+  /* Table headers */
+  .devices-table thead {
+    background-color: #f9fafb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .devices-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 2px solid #e5e7eb;
+    background-color: inherit;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  /* Table cells */
+  .devices-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: top;
+    background-color: white;
+  }
+  
+  .devices-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .devices-table tbody tr:hover {
+    background-color: #f9fafb;
+  }
+  
+  .devices-table tbody tr.selected {
+    background-color: #e0f2fe;
+  }
+  
+  /* ===== SORTABLE HEADERS ===== */
+  .sortable {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .sort-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: color 0.2s;
+  }
+  
+  .sort-header:hover {
+    color: #3b82f6;
+  }
+  
+  .sort-icon {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    transition: color 0.2s;
+  }
+  
+  .sort-icon.active {
+    color: #3b82f6;
+  }
+  
+  .sort-header:hover .sort-icon {
+    color: #3b82f6;
+  }
+  
+  /* ===== SELECTION COLUMNS ===== */
+  .selection-column {
+    width: 50px !important;
+    padding-right: 0 !important;
+  }
+  
+  .selection-cell {
+    padding-right: 0 !important;
+  }
+  
+  .devices-table input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #3b82f6;
+    border-radius: 4px;
+  }
+  
+  /* ===== SERIAL NUMBER ===== */
+  .serial-number {
+    font-weight: 600;
+    color: #6b7280;
+    text-align: center;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+  
+  /* ===== DEVICE INFO ===== */
+  .device-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .device-name {
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 0.9375rem;
+  }
+  
+  .device-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+  }
+  
+  .device-id-item {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: #6b7280;
+  }
+  
+  .device-id-item .label {
+    font-weight: 500;
+    min-width: 40px;
+    color: #9ca3af;
+  }
+  
+  .device-id-item .value {
+    font-family: 'Monaco', 'Consolas', monospace;
+    font-size: 0.6875rem;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .uuid {
+    letter-spacing: 0.5px;
+  }
+  
+  /* ===== COMPANY CELL ===== */
+  .company-cell {
+    font-weight: 500;
+    color: #1f2937;
+  }
+  
+  /* ===== DEVICE TYPE BADGE ===== */
+  .device-type-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.75rem;
+    background-color: #f3f4f6;
+    color: #374151;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+  
+  /* ===== DEVICE CODE ===== */
+  .device-code {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Monaco', 'Consolas', monospace;
+    font-size: 0.8125rem;
+    color: #1f2937;
+    font-weight: 500;
+  }
+  
+  /* ===== COPY BUTTONS ===== */
+  .copy-btn {
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    position: relative;
+  }
+  
+  .copy-btn:hover {
+    background-color: #f3f4f6;
+    color: #374151;
+  }
+  
+  .copy-btn.inline {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.2s;
+  }
+  
+  .device-code:hover .copy-btn.inline {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .copy-tooltip {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1f2937;
+    color: white;
+    padding: 0.375rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 20;
+    animation: tooltipFade 2s ease;
+  }
+  
+  .copy-tooltip:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top-color: #1f2937;
+  }
+  
+  @keyframes tooltipFade {
+    0%, 70% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /* ===== STATUS BADGES ===== */
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: fit-content;
+
+  }
+  
+  .status-icon {
+    font-size: 0.325rem;
+  }
+  
+  .status-active {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .status-inactive {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .status-maintenance {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  /* ===== LOCATION CELL ===== */
+  .location-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .coordinates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.375rem;
+    font-size: 0.75rem;
+  }
+  
+  .coord-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .coord-label {
+    color: #9ca3af;
+    font-weight: 500;
+    min-width: 30px;
+  }
+  
+  .coord-value {
+    font-family: 'Monaco', 'Consolas', monospace;
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  .map-link-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #dbeafe;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    width: fit-content;
+  }
+  
+  .map-link-btn:hover {
+    background-color: #dbeafe;
+    color: #1e40af;
+    transform: translateY(-1px);
+  }
+  
+  .external-icon {
+    font-size: 0.625rem;
+  }
+  
+  /* ===== ACTION BUTTONS ===== */
+  .action-buttons {
+    display: flex;
+    gap: 0.375rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  tr:hover .action-buttons {
+    opacity: 1;
+  }
+  
+  .action-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transition: all 0.2s;
+    position: relative;
+  }
+  
+  .action-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .action-btn:not(:disabled):hover {
+    transform: translateY(-1px);
+  }
+  
+  .view-btn {
+    color: #3b82f6;
+    background-color: #eff6ff;
+  }
+  
+  .view-btn:not(:disabled):hover {
+    background-color: #dbeafe;
+  }
+  
+  .edit-btn {
+    color: #f59e0b;
+    background-color: #fef3c7;
+  }
+  
+  .edit-btn:not(:disabled):hover {
+    background-color: #fde68a;
+  }
+  
+  .delete-btn {
+    color: #ef4444;
+    background-color: #fee2e2;
+  }
+  
+  .delete-btn:not(:disabled):hover {
+    background-color: #fecaca;
+  }
+  
+  /* ===== SELECTION SUMMARY ===== */
+  .selection-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f3f4f6;
+    border-top: 1px solid #e5e7eb;
+    animation: slideUp 0.3s ease;
+  }
+  
+  @keyframes slideUp {
+    from { 
+      opacity: 0; 
+      transform: translateY(10px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  .selected-count {
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 0.875rem;
+  }
+  
+  .selection-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  /* ===== EMPTY STATE ===== */
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .empty-state-icon {
+    font-size: 3rem;
+    color: #d1d5db;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+  
+  .empty-state-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  
+  .empty-state-description {
+    color: #6b7280;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 0.9375rem;
+  }
+  
+  /* ===== LOADING SKELETON ===== */
+  .skeleton-row {
+    animation: skeletonPulse 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes skeletonPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  .skeleton-row td {
+    vertical-align: middle;
+  }
+  
+  .skeleton-text {
+    height: 1rem;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    margin: 0.25rem 0;
+  }
+  
+  .skeleton-badge {
+    width: 60px;
+    height: 1.5rem;
+    background-color: #e5e7eb;
+    border-radius: 1rem;
+  }
+  
+  .skeleton-button {
+    width: 32px;
+    height: 32px;
+    background-color: #e5e7eb;
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: 0.375rem;
+  }
+  
+  .skeleton-checkbox {
+    width: 18px;
+    height: 18px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+  
+  .skeleton-actions {
+    display: flex;
+    gap: 0.375rem;
+  }
+  
+  /* ===== SCREEN READER ONLY ===== */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  /* ===== RESPONSIVE DESIGN ===== */
+  @media (max-width: 768px) {
+    .device-search-results {
+      margin: 1rem -1rem;
+      width: calc(100% + 2rem);
+    }
+    
+    .devices-table-container {
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+    }
+    
+    .devices-table th,
+    .devices-table td {
+      padding: 0.75rem 0.5rem;
+    }
+    
+    .coordinates {
+      grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+      opacity: 1;
+      flex-direction: column;
+    }
+    
+    .action-btn {
+      width: 28px;
+      height: 28px;
+    }
+    
+    .copy-btn.inline {
+      opacity: 1;
+      transform: scale(1);
+    }
+    
+    .selection-summary {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+    
+    .selection-actions {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .empty-state {
+      padding: 2rem 1rem;
+    }
+    
+    .empty-state-icon {
+      font-size: 2rem;
+    }
+    
+    .empty-state-title {
+      font-size: 1.125rem;
+    }
+    
+    .device-meta {
+      display: none;
+    }
+  }
+  
+  /* ===== DARK MODE SUPPORT ===== */
+  @media (prefers-color-scheme: dark) {
+    .devices-table-container {
+      background-color: #1f2937;
+      border-color: #374151;
+    }
+    
+    .devices-table th {
+      background-color: #111827;
+      color: #f9fafb;
+      border-bottom-color: #374151;
+    }
+    
+    .devices-table td {
+      background-color: #1f2937;
+      color: #d1d5db;
+      border-bottom-color: #374151;
+    }
+    
+    .devices-table tbody tr:hover {
+      background-color: #374151;
+    }
+    
+    .device-name {
+      color: #f9fafb;
+    }
+    
+    .status-badge {
+      opacity: 0.9;
+    }
+    
+    .skeleton-text,
+    .skeleton-badge,
+    .skeleton-button,
+    .skeleton-checkbox {
+      background-color: #374151;
+    }
+  }
+  
+  /* ===== PRINT STYLES ===== */
+  @media print {
+    .action-buttons,
+    .map-link-btn,
+    .copy-btn,
+    .selection-summary,
+    .sort-icon {
+      display: none !important;
+    }
+    
+    .devices-table {
+      min-width: auto;
+      width: 100%;
+    }
+    
+    .devices-table th,
+    .devices-table td {
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+    }
+  }

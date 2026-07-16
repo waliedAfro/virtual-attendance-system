@@ -1,0 +1,279 @@
+/* Pagination Component Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+  /* Base Pagination Item Styles */
+  .pagination-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 0.5rem;
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
+    color: #495057;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Hover State */
+  .pagination-item:hover:not(:disabled):not(.dots) {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Active Page */
+  .pagination-item.active {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    font-weight: 600;
+  }
+  
+  /* Disabled State */
+  .pagination-item:disabled {
+    background-color: #e9ecef;
+    color: #adb5bd;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Dots Styling */
+  .pagination-item.dots {
+    border: none;
+    background-color: transparent;
+    color: #6c757d;
+    cursor: default;
+    box-shadow: none;
+    min-width: 30px;
+  }
+  
+  .pagination-item.dots:hover {
+    background-color: transparent;
+    color: #6c757d;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* First/Last Page Arrows */
+  .pagination-item:first-child,
+  .pagination-item:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Previous/Next Arrows */
+  .pagination-item:nth-child(2),
+  .pagination-item:nth-last-child(2) {
+    font-size: 1.2rem;
+  }
+  
+  /* Focus State for Accessibility */
+  .pagination-item:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    z-index: 1;
+  }
+  
+  .pagination-item:focus:not(:focus-visible) {
+    box-shadow: none;
+  }
+  
+  /* Active Focus State */
+  .pagination-item.active:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pagination {
+      gap: 0.3rem;
+      margin: 1.5rem 0;
+    }
+  
+    .pagination-item {
+      min-width: 35px;
+      height: 35px;
+      font-size: 0.9rem;
+      border-radius: 6px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pagination {
+      gap: 0.2rem;
+    }
+  
+    .pagination-item {
+      min-width: 32px;
+      height: 32px;
+      font-size: 0.85rem;
+      padding: 0 0.3rem;
+    }
+  
+    .pagination-item:first-child,
+    .pagination-item:last-child,
+    .pagination-item:nth-child(2),
+    .pagination-item:nth-last-child(2) {
+      font-size: 1rem;
+    }
+  
+    .pagination-item.dots {
+      min-width: 25px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .pagination {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .pagination-item {
+      min-width: 30px;
+      height: 30px;
+      font-size: 0.8rem;
+    }
+  
+    .pagination-item:first-child,
+    .pagination-item:last-child {
+      display: none; /* Hide first/last arrows on very small screens */
+    }
+  }
+  
+  /* Animation for page change */
+  @keyframes pageClick {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pagination-item:active:not(:disabled):not(.dots) {
+    animation: pageClick 0.2s ease;
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .pagination-item {
+      background-color: #2d2d2d;
+      border-color: #4d4d4d;
+      color: #e0e0e0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  
+    .pagination-item:hover:not(:disabled):not(.dots) {
+      background-color: #0056b3;
+      border-color: #0056b3;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+    }
+  
+    .pagination-item.active {
+      background-color: #0056b3;
+      border-color: #0056b3;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 86, 179, 0.4);
+    }
+  
+    .pagination-item:disabled {
+      background-color: #3d3d3d;
+      color: #666;
+      border-color: #4d4d4d;
+      opacity: 0.5;
+    }
+  
+    .pagination-item.dots {
+      background-color: transparent;
+      color: #999;
+    }
+  
+    .pagination-item:focus {
+      box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.4);
+    }
+  }
+  
+  /* Optional: Add a subtle background to the entire pagination */
+  .pagination-wrapper {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+  }
+  
+  /* Optional: Loading state for pagination */
+  .pagination.loading .pagination-item {
+    opacity: 0.7;
+    pointer-events: none;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  /* Optional: Tooltip for page numbers */
+  .pagination-item[data-tooltip] {
+    position: relative;
+  }
+  
+  .pagination-item[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.25rem 0.5rem;
+    background-color: #333;
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+    z-index: 10;
+  }
+  
+  /* Optional: RTL Support */
+  [dir="rtl"] .pagination-item:first-child {
+    transform: rotate(180deg);
+  }
+  
+  [dir="rtl"] .pagination-item:last-child {
+    transform: rotate(180deg);
+  }
+  
+  [dir="rtl"] .pagination-item:nth-child(2) {
+    transform: rotate(180deg);
+  }
+  
+  [dir="rtl"] .pagination-item:nth-last-child(2) {
+    transform: rotate(180deg);
+  }

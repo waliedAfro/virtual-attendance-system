@@ -1,0 +1,490 @@
+/* ==========================================
+   Variables
+========================================== */
+:root {
+  /* Colors */
+  --color-bg-page: #f9fafc;
+  --color-bg-card: #fff;
+  --color-bg-subtle: #f8fafc;
+  --color-bg-hover: #eef1f6;
+
+  --color-primary: #2563eb;
+  --color-success: #16a34a;
+  --color-danger: #d14b4b;
+  --color-warning: #e68a2e;
+
+  --color-text-primary: #1a1e24;
+  --color-text-secondary: #64748b;
+  --color-text-tertiary: #94a3b8;
+  --color-text-inverted: #fff;
+
+  --color-border: #e2e8f0;
+  --color-focus: rgba(59,130,246,.15);
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  --font-xs: .75rem;
+  --font-sm: .875rem;
+  --font-base: 1rem;
+  --font-lg: 1.2rem;
+  --font-xl: 2rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* Spacing */
+  --space-xs: .5rem;
+  --space-sm: .75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.05);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,.12);
+
+  --transition: .25s ease;
+}
+
+
+/* ==========================================
+   Reset
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:var(--font-family);
+    background:var(--color-bg-page);
+    color:var(--color-text-primary);
+}
+
+
+/* ==========================================
+   Layout
+========================================== */
+
+.container{
+    max-width:1400px;
+    margin:auto;
+    padding:var(--space-xl);
+}
+
+.page-title{
+    font-size:var(--font-xl);
+    font-weight:700;
+    margin-bottom:var(--space-xl);
+}
+
+
+/* ==========================================
+   Cards
+========================================== */
+
+.assign-card,
+.table-card,
+.form-section,
+.details-card{
+
+    background:white;
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-sm);
+}
+
+.assign-card,
+.table-card{
+    padding:var(--space-xl);
+}
+
+.form-section{
+    border:1px solid var(--color-border);
+    padding:var(--space-lg);
+}
+
+.details-card{
+    background:var(--color-bg-subtle);
+    padding:var(--space-lg);
+    margin-top:var(--space-md);
+    border-left:4px solid var(--color-primary);
+}
+
+
+/* ==========================================
+   Form
+========================================== */
+
+.form-row{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-xs);
+    margin-bottom:var(--space-md);
+}
+
+label{
+    font-weight:600;
+}
+
+input,
+select{
+
+    width:100%;
+    padding:.85rem 1rem;
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-md);
+    background:#fff;
+    transition:var(--transition);
+}
+
+input:focus,
+select:focus{
+
+    outline:none;
+    border-color:var(--color-primary);
+    box-shadow:0 0 0 4px var(--color-focus);
+}
+
+
+/* ==========================================
+   Buttons
+========================================== */
+
+button{
+
+    border:none;
+    cursor:pointer;
+    border-radius:var(--radius-md);
+    transition:var(--transition);
+    font-weight:600;
+}
+
+
+.select-user-btn,
+.select-btn{
+
+    background:var(--color-primary);
+    color:white;
+    padding:.85rem 1.25rem;
+}
+
+.select-user-btn:hover,
+.select-btn:hover{
+
+    background:#1d4ed8;
+}
+
+
+.assign-btn{
+
+    width:100%;
+    padding:1rem;
+
+    background:
+      linear-gradient(
+         135deg,
+         var(--color-primary),
+         var(--color-success)
+      );
+
+    color:white;
+    margin-top:var(--space-lg);
+    box-shadow:var(--shadow-sm);
+}
+
+.assign-btn:hover{
+
+    transform:translateY(-2px);
+    box-shadow:var(--shadow-lg);
+}
+
+
+.remove-btn{
+
+    color:var(--color-danger);
+    background:none;
+}
+
+
+/* ==========================================
+   Status Badges
+========================================== */
+
+.status-badge,
+.role-badge{
+
+    padding:.3rem .8rem;
+    border-radius:var(--radius-full);
+    font-size:var(--font-xs);
+}
+
+.status-badge.active{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.status-badge.pending{
+    background:#fef9c3;
+}
+
+.status-badge.inactive{
+    background:#fee2e2;
+}
+
+.role-badge{
+
+    background:#e0e7ff;
+}
+
+
+/* ==========================================
+   Tables
+========================================== */
+
+/* Table container – optional, but helps with overflow */
+.user-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Header styling */
+.user-table thead {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+}
+
+.user-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #334155;
+}
+
+/* Body rows */
+.user-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
+  vertical-align: middle;
+}
+
+/* Hover effect for rows */
+.user-table tbody tr:hover {
+  background-color: #f8fafc;
+  transition: background-color 0.2s ease;
+}
+
+/* Status badge styling (Active / InActive) */
+.user-table td:nth-child(5) {
+  font-weight: 500;
+}
+
+/* Optional: style active vs inactive status (if you add a badge) */
+.user-table td:nth-child(5) {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+/* But without extra classes, you can style based on text content (limited) */
+.user-table td:nth-child(5):contains("Active") {
+  background-color: #dcfce7;
+  color: #166534;
+}
+.user-table td:nth-child(5):contains("InActive") {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+.status-badge.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+.status-badge.inactive {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Select button styling */
+.select-btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.select-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.select-btn:active {
+  transform: translateY(0);
+}
+
+/* Disabled state (if needed later) */
+.select-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* "No users found" message styling */
+.no-data {
+  text-align: center;
+  padding: 40px 16px !important;
+  color: #64748b;
+  font-style: italic;
+  background-color: #f8fafc;
+}
+
+/* Responsive: horizontal scroll on small screens */
+@media (max-width: 768px) {
+  .user-table {
+    font-size: 0.8rem;
+  }
+  .user-table th,
+  .user-table td {
+    padding: 10px 12px;
+  }
+  .select-btn {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Optional: alternate row striping */
+.user-table tbody tr:nth-child(even) {
+  background-color: #f9f9fc;
+}
+
+
+/* ==========================================
+   Modal
+========================================== */
+
+.lisence-modal-overlay{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+       rgba(0,0,0,.4);
+
+    backdrop-filter:
+       blur(4px);
+
+    z-index:1000;
+
+    
+    padding:1rem;
+}
+
+
+.lisence-modal-content{
+
+    width:min(99vw,1100px);
+    max-height:90vh;
+
+    background:white;
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+
+    box-shadow:var(--shadow-lg);
+}
+
+
+.lisence-modal-body{
+
+    overflow-y:auto;
+    padding:var(--space-xl);
+}
+
+
+/* ==========================================
+   Pagination
+========================================== */
+
+.pagination{
+
+    display:flex;
+    justify-content:center;
+    gap:.5rem;
+    margin-top:var(--space-xl);
+}
+
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:768px){
+
+.container{
+
+    padding:1rem;
+}
+
+.modal-content{
+
+    width:100%;
+    max-width:100%;
+}
+
+.users-table{
+
+    min-width:600px;
+}
+
+.page-title{
+
+    font-size:1.5rem;
+}
+
+}

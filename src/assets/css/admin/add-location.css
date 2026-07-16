@@ -1,0 +1,238 @@
+/* Update these in your existing add-location.css to match device design */
+
+.add-location-container {
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+
+.add-location-container h4 {
+  margin: 0 0 20px 0;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.form-body {
+  margin-top: 0;
+}
+
+.section-header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.section-title::before {
+  width: 6px;
+  height: 20px;
+  background-color: #2980b9;
+  margin-right: 12px;
+}
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 0;
+}
+
+.form-group.full-width {
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+
+.form-hint {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 5px;
+  font-style: normal;
+}
+
+/* Checkbox styling to match device page */
+.checkbox-group {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 8px 0;
+}
+
+.form-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  background-color: #fff;
+}
+
+.checkbox-custom::after {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.form-checkbox:checked + .checkbox-custom {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.form-checkbox:checked + .checkbox-custom::after {
+  opacity: 1;
+}
+
+.form-checkbox:disabled + .checkbox-custom {
+  background-color: #f8f9fa;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+.form-checkbox:checked:disabled + .checkbox-custom {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-checkbox:disabled ~ .checkbox-text {
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Form actions to match device page */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 140px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #3498db;
+}
+
+.btn-primary:active:not(:disabled) {
+  background-color: #21618c;
+  transform: translateY(1px);
+}
+
+.btn-primary:disabled {
+  background-color: #8bbbd7;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-secondary {
+  padding: 12px 24px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 140px;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #545b62;
+}
+
+.btn-secondary:active:not(:disabled) {
+  background-color: #495057;
+  transform: translateY(1px);
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .add-location-container {
+    padding: 15px;
+  }
+  
+  .add-location-container h4 {
+    font-size: 24px;
+  }
+  
+  .form-group {
+    min-width: 100%;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
+
+/* Focus states */
+.btn-primary:focus,
+.btn-secondary:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
